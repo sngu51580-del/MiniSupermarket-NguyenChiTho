@@ -1,4 +1,6 @@
-namespace MiniSupermarket.WinForms
+﻿using MiniSupermarket.WinForms;
+
+namespace MiniSupermarket.WinForm
 {
     internal static class Program
     {
@@ -11,7 +13,9 @@ namespace MiniSupermarket.WinForms
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FormCategoryManagement());
+            //Application.Run(new FormCategoryManagement());
+            //Application.Run(new FormRoleManagement());
+            Application.Run(new FormLogin());
         }
     }
 }

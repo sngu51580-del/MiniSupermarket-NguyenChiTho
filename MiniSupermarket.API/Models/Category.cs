@@ -8,6 +8,7 @@
 
         // Tên nhóm hàng (Bắt buộc, không được để trống)
         public string CategoryName { get; set; } = string.Empty;
+
         // Mô tả chi tiết về nhóm hàng (Có thể để trống)
         public string? Description { get; set; }
     }

@@ -1,4 +1,4 @@
-﻿namespace MiniSupermarket.WinForms
+﻿namespace MiniSupermarket.WinForm
 {
     partial class Form1
     {

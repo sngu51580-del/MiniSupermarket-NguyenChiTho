@@ -1,60 +1,45 @@
-# 🛒 HỆ THỐNG QUẢN LÝ SIÊU THỊ MINI (MINISUPERMARKET SYSTEM)
-> **Môn học:** Lập trình Ứng dụng .NET Core (Mã môn: 229162)  
-> **Buổi thực hành:** Buổi 1 - Xây dựng Web API quản lý danh mục và kết nối WinForms Client (CRUD)
+🛒 HỆ THỐNG QUẢN LÝ SIÊU THỊ MINI (MINISUPERMARKET SYSTEM)
+
+Môn học: Lập trình Ứng dụng .NET Core (Mã môn: 229162)
+Buổi thực hành: BUỔI 2: BẢO MẬT & PHÂN QUYỀN JWT CHO WEB API
+
+Hệ thống Quản lý Siêu thị Mini — Tích hợp Đăng nhập & Bảo mật Token
+## 📝 Tóm tắt công việc đã thực hiện (Buổi 2)
+
+### 1. 🔑 Backend (`MiniSupermarket.API`)
+* **Tích hợp thư viện bảo mật:** Cài đặt các gói NuGet `System.IdentityModel.Tokens.Jwt` và `Microsoft.AspNetCore.Authentication.JwtBearer`.
+* **Xây dựng `AuthController`:**
+  * Tạo endpoint `POST /api/auth/login` tiếp nhận tài khoản/mật khẩu.
+  * Lập trình hàm `GenerateJwtToken` mã hóa thông tin người dùng (`Username`, `Role`) thành chuỗi mã JWT Token có thời hạn 2 giờ.
+* **Cấu hình Middleware trong `Program.cs`:** 
+  * Đăng ký dịch vụ xác thực `JwtBearer` với tham số kiểm tra chữ ký bí mật (`IssuerSigningKey`).
+  * Kích hoạt `app.UseAuthentication()` và `app.UseAuthorization()`.
+* **Phân quyền Endpoint:**
+  * Áp dụng thuộc tính `[Authorize]` để bảo vệ toàn bộ `CategoriesController`.
+  * Phân định ranh giới chức năng: `[Authorize(Roles = "Admin")]` cho trang quản trị và `[Authorize(Roles = "Admin,Cashier")]` cho chức năng bán hàng POS.
 
 ---
 
-## 🏗️ 1. Mô hình Kiến trúc Hệ thống (Client - Server)
-Dự án được xây dựng theo mô hình phân tầng hiện đại, tách biệt hoàn toàn giữa Backend và Frontend:
-* **`MiniSupermarket.API` (Backend):** Dự án ASP.NET Core Web API chịu trách nhiệm xử lý logic nghiệp vụ, quản lý dữ liệu và cung cấp các RESTful API chuẩn hóa.
-* **`MiniSupermarket.WinForms` (Frontend Client):** Ứng dụng Windows Forms đóng vai trò là máy trạm POS tại quầy, sử dụng `HttpClient` để gọi dữ liệu từ API qua mạng và hiển thị trực quan lên `DataGridView`.
+### 2. 🖥️ Frontend Client (`MiniSupermarket.WinForms`)
+* **Quản lý phiên làm việc (`SessionManager`):** Tạo lớp tĩnh lưu trữ chuỗi `JwtToken` và `CurrentRole` trong bộ nhớ tạm sau khi đăng nhập.
+* **Xây dựng Form đăng nhập (`FormLogin`):**
+  * Thiết kế giao diện nhập tài khoản, mật khẩu (ẩn ký tự).
+  * Xử lý gọi API đăng nhập, đọc JSON trả về để lấy Token và điều hướng sang Form chính.
+* **Cấu hình đính kèm Token khi gọi API:** Cập nhật hàm khởi tạo `HttpClient` tự động đính kèm Header `Authorization: Bearer <token>` đối với mọi yêu cầu gửi lên Web API backend.
+* **Cập nhật khởi chạy ứng dụng:** Đổi Form khởi chạy mặc định trong `Program.cs` thành `FormLogin`.
 
 ---
 
-## 🛠️ 2. Công nghệ Sử dụng
-* **Ngôn ngữ:** C# (.NET 8.0)
-* **Backend:** ASP.NET Core Web API, Controllers, In-Memory Data, LINQ
-* **Frontend:** Windows Forms (.NET 8.0), `System.Net.Http.Json`
-* **Công cụ kiểm thử:** Swagger UI
-
----
-
-## 📂 3. Cấu trúc Solution
-```text
-MiniSupermarketSystem/
-│
-├── MiniSupermarket.API/          # Dự án Web API (Backend)
-│   ├── Controllers/              # Chứa CategoriesController (CRUD & Search)
-│   ├── Models/                   # Chứa lớp thực thể Category.cs
-│   └── Program.cs                # Cấu hình dịch vụ và Middleware
-│
-└── MiniSupermarket.WinForms/     # Dự án Windows Forms (Frontend Client)
-    └── FormCategoryManagement.cs # Giao diện quản lý danh mục CRUD
-
-
-🚀 4. Hướng dẫn Chạy và Kiểm thử Dự án
-Bước 1: Chạy phía Backend (Web API)
-Mở Solution bằng Visual Studio 2022.
-
-
-Nhấp chuột phải vào project MiniSupermarket.API chọn Set as Startup Project.
-
-
-Nhấn F5 để chạy. Trình duyệt sẽ tự động mở giao diện Swagger UI để kiểm tra các phương thức GET, POST, PUT, DELETE.
-
-
-Bước 2: Chạy phía Frontend (WinForms Client)
-Đảm bảo cổng (Port) trong ApiClientService hoặc HttpClient của WinForms khớp với cổng https://localhost:XXXXX của Web API đang chạy.
-
-Nhấp chuột phải vào project MiniSupermarket.WinForms chọn Debug -> Start new instance.
-
-Thử nghiệm các chức năng: Tải danh sách, Thêm mới, Sửa, Xóa và Tìm kiếm nhóm hàng.
-
+### 3. 🧪 Kiểm thử & Xác minh bảo mật
+* Kiểm thử bằng Swagger UI:
+  * ✅ Trả về **`401 Unauthorized`** khi truy cập API chưa có Token.
+  * ✅ Trả về **`200 OK`** khi đăng nhập lấy Token và truy cập đúng chức năng theo quyền.
+  * ✅ Trả về **`403 Forbidden`** khi dùng tài khoản Thu ngân (`Cashier`) cố truy cập khu vực Quản lý (`Admin`).
 👨‍💻 5. Tác giả
-Họ tên sinh viên: Nguyen Chi Tho
+Họ tên sinh viên: Nguyễn Quốc Vương
 
 
-Mã sinh viên: 2124110260
+Mã sinh viên: 2124110272
 
 
-Lớp học phần:CCQ2111H
+Lớp học phần: CCQ2411D
