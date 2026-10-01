@@ -6,7 +6,7 @@ namespace MiniSupermarket.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    [Authorize] // Yêu cầu đăng nhập chung cho toàn bộ controller
     public class CategoriesController : ControllerBase
     {
         private static readonly List<Category> _categories = new() {
@@ -17,16 +17,23 @@ namespace MiniSupermarket.API.Controllers
             new Category { CategoryId = 5, CategoryName = "Gia vị & Dầu ăn", Description = "Nước mắm, hạt nêm, dầu thực vật" }
         };
 
-        [HttpGet] public IActionResult GetAll() => Ok(_categories);
+        // Xem tất cả: Cả Admin và Cashier đều truy cập được
+        [HttpGet]
+        [Authorize(Roles = "Admin,Cashier")]
+        public IActionResult GetAll() => Ok(_categories);
 
+        // Xem theo ID: Cả Admin và Cashier đều truy cập được
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Cashier")]
         public IActionResult GetById(int id)
         {
             var cat = _categories.FirstOrDefault(c => c.CategoryId == id);
             return cat == null ? NotFound(new { message = "Không tìm thấy nhóm hàng!" }) : Ok(cat);
         }
 
+        // Tìm kiếm: Cả Admin và Cashier đều truy cập được
         [HttpGet("search")]
+        [Authorize(Roles = "Admin,Cashier")]
         public IActionResult Search([FromQuery] string keyword)
         {
             if (string.IsNullOrWhiteSpace(keyword)) return BadRequest(new { message = "Vui lòng nhập từ khóa!" });
@@ -34,7 +41,9 @@ namespace MiniSupermarket.API.Controllers
             return Ok(res);
         }
 
+        // Thêm mới: Chỉ Admin có quyền
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create([FromBody] Category newCat)
         {
             if (string.IsNullOrWhiteSpace(newCat.CategoryName)) return BadRequest(new { message = "Tên không được trống!" });
@@ -43,29 +52,39 @@ namespace MiniSupermarket.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = newCat.CategoryId }, newCat);
         }
 
+        // Cập nhật: Chỉ Admin có quyền
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Update(int id, [FromBody] Category updateCat)
         {
+            if (string.IsNullOrWhiteSpace(updateCat.CategoryName)) return BadRequest(new { message = "Tên không được trống!" });
+
             var cat = _categories.FirstOrDefault(c => c.CategoryId == id);
             if (cat == null) return NotFound(new { message = "Không tìm thấy nhóm hàng cần sửa!" });
-            cat.CategoryName = updateCat.CategoryName; cat.Description = updateCat.Description;
+
+            cat.CategoryName = updateCat.CategoryName;
+            cat.Description = updateCat.Description;
             return NoContent();
         }
 
+        // Xóa: Chỉ Admin có quyền
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var cat = _categories.FirstOrDefault(c => c.CategoryId == id);
             if (cat == null) return NotFound(new { message = "Không tìm thấy nhóm hàng cần xóa!" });
+
             _categories.Remove(cat);
             return NoContent();
         }
 
-        // Phân quyền
+        // Dashboard dành riêng cho Admin
         [HttpGet("admin-dashboard")]
         [Authorize(Roles = "Admin")]
         public IActionResult GetAdminDashboard() => Ok(new { message = "Chào mừng Admin!" });
 
+        // Màn hình POS cho nhân viên
         [HttpGet("staff-pos")]
         [Authorize(Roles = "Admin,Cashier")]
         public IActionResult GetStaffPos() => Ok(new { message = "Màn hình POS sẵn sàng!" });
