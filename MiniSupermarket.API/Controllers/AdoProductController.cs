@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * Bài tập: Buổi 5 - Tiết 2: API Tra cứu Barcode & Mô hình ngắt kết nối DataTable
  * Mô tả: Controller ADO.NET thuần - Tra cứu mã vạch siêu tốc và demo DataTable ngắt kết nối (bất đồng bộ async/await)
  */

@@ -47,92 +47,92 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             CategoryId = 1,
-                            CategoryName = "Rau lá hữu cơ Farm",
-                            Description = "Rau ăn lá canh tác hữu cơ theo mùa, thu hoạch trực tiếp tại vườn mỗi sớm"
+                            CategoryName = "Gia vị bếp nhà",
+                            Description = "Nước mắm, đường cát, bột ngọt, hạt nêm gia vị truyền thống"
                         },
                         new
                         {
                             CategoryId = 2,
-                            CategoryName = "Củ quả tươi sạch",
-                            Description = "Củ quả sạch tự nhiên, không tồn dư thuốc BVTV và phân bón hóa học"
+                            CategoryName = "Gạo tấm & Ngũ cốc bao",
+                            Description = "Gạo tấm thơm Sài Gòn, nếp cái hoa vàng, các loại đậu hạt"
                         },
                         new
                         {
                             CategoryId = 3,
-                            CategoryName = "Trái cây vườn sinh thái",
-                            Description = "Trái cây chín tự nhiên, không chất kích thích tăng trưởng và hóa chất bảo quản"
+                            CategoryName = "Mì gói & Miến bún khô",
+                            Description = "Mì tôm Miliket, Hảo Hảo, phở khô, miến dong ăn liền"
                         },
                         new
                         {
                             CategoryId = 4,
-                            CategoryName = "Nấm tươi & Nấm ăn hữu cơ",
-                            Description = "Các loại nấm tươi trồng trên giá thể mùn cưa và rơm sạch tiêu chuẩn Organic"
+                            CategoryName = "Bánh kẹo tuổi thơ",
+                            Description = "Bánh quy bơ, kẹo dừa, bánh men, kẹo mè xửng, kẹo lạc"
                         },
                         new
                         {
                             CategoryId = 5,
-                            CategoryName = "Thịt sạch chăn thả tự nhiên",
-                            Description = "Thịt heo, gà, bò thả đồi/thảo mộc, ăn thức ăn tự nhiên, không chất tạo nạc"
+                            CategoryName = "Nước ngọt & Bia chai giải khát",
+                            Description = "Xá xị Chương Dương, nước ngọt có ga, bia lon Sài Gòn ướp lạnh"
                         },
                         new
                         {
                             CategoryId = 6,
-                            CategoryName = "Thủy hải sản sinh thái",
-                            Description = "Cá, tôm sinh thái nuôi đầm tự nhiên hoặc đánh bắt bền vững"
+                            CategoryName = "Sữa đặc & Cà phê phin",
+                            Description = "Sữa đặc Ông Thọ, cà phê nguyên chất pha phin vợt Sài Gòn"
                         },
                         new
                         {
                             CategoryId = 7,
-                            CategoryName = "Trứng gia cầm thả vườn",
-                            Description = "Trứng gà ta, trứng vịt cỏ thả vườn tự nhiên, giàu đạm và không kháng sinh"
+                            CategoryName = "Đồ hộp & Thực phẩm chế biến",
+                            Description = "Cá hộp Ba Cô Gái, pate thịt nguội, xúc xích tiệt trùng"
                         },
                         new
                         {
                             CategoryId = 8,
-                            CategoryName = "Sữa tươi thanh trùng & Sữa hạt",
-                            Description = "Sữa bò tươi nguyên chất từ trang trại và các loại sữa hạt nấu thủ công"
+                            CategoryName = "Chăm sóc giặt xả vải vóc",
+                            Description = "Bột giặt Viso, nước giặt xả Comfort thơm hương ban mai"
                         },
                         new
                         {
                             CategoryId = 9,
-                            CategoryName = "Gạo sạch & Nông sản ngũ cốc",
-                            Description = "Gạo lứt, lúa rươi, nếp nương và các loại đậu hạt nguyên bản không tẩy trắng"
+                            CategoryName = "Tẩy rửa & Vệ sinh nhà cửa",
+                            Description = "Nước rửa chén Mỹ Hảo, nước lau sàn, chổi cước, cọ chùi xoong"
                         },
                         new
                         {
                             CategoryId = 10,
-                            CategoryName = "Mật ong rừng & Dược liệu vườn",
-                            Description = "Mật ong tự nhiên, thảo mộc sấy lạnh, nghệ, gừng sẻ từ vùng đệm sinh thái"
+                            CategoryName = "Vệ sinh cá nhân gia đình",
+                            Description = "Xà bông Cô Ba, kem đánh răng Dạ Lan, dầu gội gói tiện dụng"
                         },
                         new
                         {
                             CategoryId = 11,
-                            CategoryName = "Gia vị & Nước mắm thủ công",
-                            Description = "Nước mắm ủ chượp truyền thống, muối hầm, tiêu rừng, tương ủ tự nhiên"
+                            CategoryName = "Băng giấy & Màng bọc tiện lợi",
+                            Description = "Giấy vệ sinh cuộn, tăm bông, túi bóng gói hàng, màng bọc thực phẩm"
                         },
                         new
                         {
                             CategoryId = 12,
-                            CategoryName = "Dầu ép lạnh nguyên chất",
-                            Description = "Dầu mè, dầu phộng, dầu sacha inchi ép cơ học không tinh luyện"
+                            CategoryName = "Dầu ăn & Mỡ tinh luyện",
+                            Description = "Dầu đậu nành Tường An, dầu mè thơm chiên xào nấu nướng"
                         },
                         new
                         {
                             CategoryId = 13,
-                            CategoryName = "Rau củ sấy & Trà thảo mộc Farm",
-                            Description = "Rau củ quả sấy thăng hoa giữ trọn khoáng chất, trà hoa thảo mộc sấy mộc"
+                            CategoryName = "Đồ khô & Thảo quả rim",
+                            Description = "Tôm khô Cà Mau, cá sặc bổi, mực khô, nấm mèo, mộc nhĩ khô"
                         },
                         new
                         {
                             CategoryId = 14,
-                            CategoryName = "Thực phẩm lên men tự nhiên",
-                            Description = "Dưa cải chua men tự nhiên, kim chi hữu cơ, giấm táo thủ công không phụ gia"
+                            CategoryName = "Thuốc lá & Trầu cau lễ",
+                            Description = "Bao diêm Thống Nhất, bật lửa ga, trà bắc Thái Nguyên"
                         },
                         new
                         {
                             CategoryId = 15,
-                            CategoryName = "Combo Nông Sản Tuần",
-                            Description = "Gói nông sản tiện lợi theo mùa được tuyển chọn tươi mới từ trang trại"
+                            CategoryName = "Vật dụng tạp hóa gia dụng",
+                            Description = "Kẹp quần áo, bật lửa, pin con thỏ, keo 502, băng keo bấm ghim"
                         });
                 });
 
@@ -180,137 +180,137 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             CustomerId = 1,
-                            Address = "123 Lê Lợi, Phường Bến Thành, Quận 1, Hồ Chí Minh",
-                            CustomerName = "Nguyễn Văn An",
+                            Address = "14/2 Cô Giang, Phường Cầu Ông Lãnh, TP.HCM",
+                            CustomerName = "Má Bảy Hẻm Cây Điệp",
                             MembershipRank = "Kim Cương",
-                            PhoneNumber = "0901122334",
-                            RewardPoints = 1250
+                            PhoneNumber = "0903112233",
+                            RewardPoints = 1450
                         },
                         new
                         {
                             CustomerId = 2,
-                            Address = "45 Nguyễn Chí Thanh, Quận Đống Đa, Hà Nội",
-                            CustomerName = "Trần Thị Bình",
+                            Address = "82 Bùi Viện, Phường Phạm Ngũ Lão,  TP.HCM",
+                            CustomerName = "Chị Lan Bún Bò",
                             MembershipRank = "Vàng",
-                            PhoneNumber = "0918877665",
-                            RewardPoints = 680
+                            PhoneNumber = "0918776655",
+                            RewardPoints = 820
                         },
                         new
                         {
                             CustomerId = 3,
-                            Address = "78 Hùng Vương, Quận Hải Châu, Đà Nẵng",
-                            CustomerName = "Lê Văn Cường",
-                            MembershipRank = "Bạc",
-                            PhoneNumber = "0983344556",
-                            RewardPoints = 240
+                            Address = "105 Đề Thám, Phường Cô Giang, TP.HCM",
+                            CustomerName = "Chú Tư Xe Ôm",
+                            MembershipRank = "Thân Thiết",
+                            PhoneNumber = "0983445566",
+                            RewardPoints = 210
                         },
                         new
                         {
                             CustomerId = 4,
-                            Address = "12 Nguyễn Văn Cừ, Quận Ninh Kiều, Cần Thơ",
-                            CustomerName = "Phạm Thị Dung",
-                            MembershipRank = "Thân Thiết",
-                            PhoneNumber = "0935566778",
-                            RewardPoints = 85
+                            Address = "204 Trần Hưng Đạo , Phường 7, TP.HCM",
+                            CustomerName = "Cô Năm Bánh Tiêu",
+                            MembershipRank = "Bạc",
+                            PhoneNumber = "0935667788",
+                            RewardPoints = 430
                         },
                         new
                         {
                             CustomerId = 5,
-                            Address = "56 Trần Hưng Đạo, Thành phố Nha Trang, Khánh Hòa",
-                            CustomerName = "Hoàng Minh Đức",
+                            Address = "45 Nguyễn Biểu, Phường 1 , TP.HCM",
+                            CustomerName = "Bác Sáu Thợ Hồ",
                             MembershipRank = "Mới",
-                            PhoneNumber = "0977889900",
-                            RewardPoints = 20
+                            PhoneNumber = "0977881122",
+                            RewardPoints = 35
                         },
                         new
                         {
                             CustomerId = 6,
-                            Address = "89 Nguyễn Huệ, Phường Bến Nghé, Quận 1, Hồ Chí Minh",
-                            CustomerName = "Võ Thị Hoa",
+                            Address = "68 Lê Thị Riêng , Phường Bến Thành , TP.HCM",
+                            CustomerName = "Chị Hương Tiệm Tóc",
                             MembershipRank = "Vàng",
-                            PhoneNumber = "0901234567",
-                            RewardPoints = 720
+                            PhoneNumber = "0909123456",
+                            RewardPoints = 760
                         },
                         new
                         {
                             CustomerId = 7,
-                            Address = "34 Trần Phú, Quận Hải Châu, Đà Nẵng",
-                            CustomerName = "Đặng Văn Hùng",
+                            Address = "12 Vĩnh Viễn, Phường 2 , TP.HCM",
+                            CustomerName = "Anh Ba Sửa Xe",
                             MembershipRank = "Bạc",
-                            PhoneNumber = "0912345678",
-                            RewardPoints = 315
+                            PhoneNumber = "0913987654",
+                            RewardPoints = 390
                         },
                         new
                         {
                             CustomerId = 8,
-                            Address = "67 Hai Bà Trưng, Quận Hoàn Kiếm, Hà Nội",
-                            CustomerName = "Bùi Thị Lan",
-                            MembershipRank = "Thân Thiết",
-                            PhoneNumber = "0987654321",
-                            RewardPoints = 150
+                            Address = "39 Chợ Lớn, Phường 11 , TP.HCM",
+                            CustomerName = "Bà Hai Trầu Cau",
+                            MembershipRank = "Kim Cương",
+                            PhoneNumber = "0987112233",
+                            RewardPoints = 1600
                         },
                         new
                         {
                             CustomerId = 9,
-                            Address = "25 Lê Duẩn, Thành phố Huế, Thừa Thiên Huế",
-                            CustomerName = "Đỗ Minh Quân",
-                            MembershipRank = "Mới",
-                            PhoneNumber = "0931234567",
-                            RewardPoints = 45
+                            Address = "55 Tôn Đản, Phường 13, TP.HCM",
+                            CustomerName = "Chị Út Tạp Hóa Xóm Dưới",
+                            MembershipRank = "Vàng",
+                            PhoneNumber = "0932334455",
+                            RewardPoints = 910
                         },
                         new
                         {
                             CustomerId = 10,
-                            Address = "112 Phan Chu Trinh, Thành phố Hội An, Quảng Nam",
-                            CustomerName = "Ngô Thị Mai",
+                            Address = "73 Hoàng Diệu, Phường 12,  TP.HCM",
+                            CustomerName = "Thím Chín Bán Chè",
                             MembershipRank = "Bạc",
-                            PhoneNumber = "0971234568",
-                            RewardPoints = 280
+                            PhoneNumber = "0974556677",
+                            RewardPoints = 340
                         },
                         new
                         {
                             CustomerId = 11,
-                            Address = "43 Điện Biên Phủ, Quận Thanh Khê, Đà Nẵng",
-                            CustomerName = "Phan Văn Nam",
-                            MembershipRank = "Vàng",
-                            PhoneNumber = "0908765432",
-                            RewardPoints = 590
+                            Address = "118 Hậu Giang, Phường 6,  TP.HCM",
+                            CustomerName = "Chú Chín Thợ Mộc",
+                            MembershipRank = "Thân Thiết",
+                            PhoneNumber = "0908889900",
+                            RewardPoints = 180
                         },
                         new
                         {
                             CustomerId = 12,
-                            Address = "78 Lạc Long Quân, Quận Tây Hồ, Hà Nội",
-                            CustomerName = "Lý Thị Ngọc",
-                            MembershipRank = "Thân Thiết",
-                            PhoneNumber = "0913456789",
-                            RewardPoints = 110
+                            Address = "29 Võ Văn Tần, Phường 6,  TP.HCM",
+                            CustomerName = "Cô Mười Bánh Mì",
+                            MembershipRank = "Vàng",
+                            PhoneNumber = "0915667799",
+                            RewardPoints = 870
                         },
                         new
                         {
                             CustomerId = 13,
-                            Address = "156 Võ Văn Tần, Quận 3, Hồ Chí Minh",
-                            CustomerName = "Trương Minh Phúc",
-                            MembershipRank = "Kim Cương",
-                            PhoneNumber = "0984567890",
-                            RewardPoints = 1480
+                            Address = "88 Calmette, Phường Nguyễn Thái Bình, Q TP.HCM",
+                            CustomerName = "Dì Tư Dệt Chiếu",
+                            MembershipRank = "Thân Thiết",
+                            PhoneNumber = "0989223344",
+                            RewardPoints = 150
                         },
                         new
                         {
                             CustomerId = 14,
-                            Address = "29 Nguyễn Trãi, Quận 5, Hồ Chí Minh",
-                            CustomerName = "Mai Thị Thảo",
+                            Address = "10 Bến Vân Đồn, Phường 9,  TP.HCM",
+                            CustomerName = "Anh Năm Giao Nước Đá",
                             MembershipRank = "Bạc",
-                            PhoneNumber = "0936789012",
-                            RewardPoints = 360
+                            PhoneNumber = "0938665544",
+                            RewardPoints = 420
                         },
                         new
                         {
                             CustomerId = 15,
-                            Address = "91 Trần Hưng Đạo, Thành phố Vũng Tàu, Bà Rịa - Vũng Tàu",
-                            CustomerName = "Đinh Văn Tùng",
-                            MembershipRank = "Vàng",
-                            PhoneNumber = "0978901234",
-                            RewardPoints = 830
+                            Address = "215 Lý Thường Kiệt, Phường 7,  TP.HCM",
+                            CustomerName = "Chị Mai Công Nhân May",
+                            MembershipRank = "Mới",
+                            PhoneNumber = "0976113355",
+                            RewardPoints = 50
                         });
                 });
 
@@ -355,155 +355,155 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             OrderId = 1,
-                            AmountReceived = 300000m,
-                            ChangeAmount = 35000m,
-                            OrderDate = new DateTime(2026, 10, 1, 8, 30, 0, 0, DateTimeKind.Unspecified),
+                            AmountReceived = 60000m,
+                            ChangeAmount = 6000m,
+                            OrderDate = new DateTime(2026, 10, 1, 7, 45, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 265000m,
+                            TotalAmount = 54000m,
                             UserId = 3
                         },
                         new
                         {
                             OrderId = 2,
-                            AmountReceived = 326000m,
-                            ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 1, 9, 15, 0, 0, DateTimeKind.Unspecified),
-                            PaymentMethod = "Transfer",
+                            AmountReceived = 150000m,
+                            ChangeAmount = 7000m,
+                            OrderDate = new DateTime(2026, 10, 1, 8, 30, 0, 0, DateTimeKind.Unspecified),
+                            PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 326000m,
+                            TotalAmount = 143000m,
                             UserId = 4
                         },
                         new
                         {
                             OrderId = 3,
-                            AmountReceived = 500000m,
-                            ChangeAmount = 80000m,
-                            OrderDate = new DateTime(2026, 10, 2, 10, 20, 0, 0, DateTimeKind.Unspecified),
-                            PaymentMethod = "Cash",
+                            AmountReceived = 148000m,
+                            ChangeAmount = 0m,
+                            OrderDate = new DateTime(2026, 10, 2, 9, 15, 0, 0, DateTimeKind.Unspecified),
+                            PaymentMethod = "Transfer",
                             Status = "Completed",
-                            TotalAmount = 420000m,
+                            TotalAmount = 148000m,
                             UserId = 5
                         },
                         new
                         {
                             OrderId = 4,
-                            AmountReceived = 150000m,
-                            ChangeAmount = 18000m,
-                            OrderDate = new DateTime(2026, 10, 2, 11, 45, 0, 0, DateTimeKind.Unspecified),
+                            AmountReceived = 100000m,
+                            ChangeAmount = 30000m,
+                            OrderDate = new DateTime(2026, 10, 2, 10, 20, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 132000m,
+                            TotalAmount = 70000m,
                             UserId = 6
                         },
                         new
                         {
                             OrderId = 5,
-                            AmountReceived = 181000m,
-                            ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 3, 13, 10, 0, 0, DateTimeKind.Unspecified),
-                            PaymentMethod = "Transfer",
+                            AmountReceived = 50000m,
+                            ChangeAmount = 5000m,
+                            OrderDate = new DateTime(2026, 10, 3, 11, 40, 0, 0, DateTimeKind.Unspecified),
+                            PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 181000m,
+                            TotalAmount = 45000m,
                             UserId = 7
                         },
                         new
                         {
                             OrderId = 6,
-                            AmountReceived = 150000m,
-                            ChangeAmount = 8000m,
-                            OrderDate = new DateTime(2026, 10, 3, 14, 25, 0, 0, DateTimeKind.Unspecified),
+                            AmountReceived = 100000m,
+                            ChangeAmount = 38000m,
+                            OrderDate = new DateTime(2026, 10, 3, 14, 10, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 142000m,
+                            TotalAmount = 62000m,
                             UserId = 3
                         },
                         new
                         {
                             OrderId = 7,
-                            AmountReceived = 475000m,
+                            AmountReceived = 238000m,
                             ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 4, 8, 40, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 10, 4, 15, 5, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Transfer",
                             Status = "Completed",
-                            TotalAmount = 475000m,
+                            TotalAmount = 238000m,
                             UserId = 4
                         },
                         new
                         {
                             OrderId = 8,
-                            AmountReceived = 300000m,
-                            ChangeAmount = 49000m,
-                            OrderDate = new DateTime(2026, 10, 4, 15, 30, 0, 0, DateTimeKind.Unspecified),
+                            AmountReceived = 100000m,
+                            ChangeAmount = 24000m,
+                            OrderDate = new DateTime(2026, 10, 4, 16, 30, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 251000m,
+                            TotalAmount = 76000m,
                             UserId = 5
                         },
                         new
                         {
                             OrderId = 9,
-                            AmountReceived = 334000m,
+                            AmountReceived = 142000m,
                             ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 5, 9, 5, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 10, 5, 8, 15, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Transfer",
                             Status = "Completed",
-                            TotalAmount = 334000m,
+                            TotalAmount = 142000m,
                             UserId = 6
                         },
                         new
                         {
                             OrderId = 10,
-                            AmountReceived = 350000m,
-                            ChangeAmount = 45000m,
-                            OrderDate = new DateTime(2026, 10, 5, 10, 50, 0, 0, DateTimeKind.Unspecified),
+                            AmountReceived = 70000m,
+                            ChangeAmount = 6000m,
+                            OrderDate = new DateTime(2026, 10, 5, 9, 50, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 305000m,
+                            TotalAmount = 64000m,
                             UserId = 7
                         },
                         new
                         {
                             OrderId = 11,
-                            AmountReceived = 685000m,
+                            AmountReceived = 214000m,
                             ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 6, 12, 15, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 10, 6, 10, 30, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Transfer",
                             Status = "Completed",
-                            TotalAmount = 685000m,
+                            TotalAmount = 214000m,
                             UserId = 3
                         },
                         new
                         {
                             OrderId = 12,
-                            AmountReceived = 300000m,
-                            ChangeAmount = 18000m,
+                            AmountReceived = 60000m,
+                            ChangeAmount = 3000m,
                             OrderDate = new DateTime(2026, 10, 7, 16, 20, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 282000m,
+                            TotalAmount = 57000m,
                             UserId = 4
                         },
                         new
                         {
                             OrderId = 13,
-                            AmountReceived = 296000m,
+                            AmountReceived = 72000m,
                             ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 8, 9, 35, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 10, 8, 17, 10, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Transfer",
                             Status = "Completed",
-                            TotalAmount = 296000m,
+                            TotalAmount = 72000m,
                             UserId = 5
                         },
                         new
                         {
                             OrderId = 14,
-                            AmountReceived = 100000m,
-                            ChangeAmount = 13000m,
-                            OrderDate = new DateTime(2026, 10, 9, 14, 45, 0, 0, DateTimeKind.Unspecified),
+                            AmountReceived = 50000m,
+                            ChangeAmount = 10000m,
+                            OrderDate = new DateTime(2026, 10, 9, 11, 20, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Completed",
-                            TotalAmount = 87000m,
+                            TotalAmount = 40000m,
                             UserId = 6
                         },
                         new
@@ -511,10 +511,10 @@ namespace MiniSupermarket.API.Migrations
                             OrderId = 15,
                             AmountReceived = 0m,
                             ChangeAmount = 0m,
-                            OrderDate = new DateTime(2026, 10, 10, 17, 10, 0, 0, DateTimeKind.Unspecified),
+                            OrderDate = new DateTime(2026, 10, 10, 18, 40, 0, 0, DateTimeKind.Unspecified),
                             PaymentMethod = "Cash",
                             Status = "Cancelled",
-                            TotalAmount = 340000m,
+                            TotalAmount = 143000m,
                             UserId = 7
                         });
                 });
@@ -556,9 +556,9 @@ namespace MiniSupermarket.API.Migrations
                             OrderDetailId = 1,
                             OrderId = 1,
                             ProductId = 1,
-                            Quantity = 2,
-                            SubTotal = 70000m,
-                            UnitPrice = 35000m
+                            Quantity = 1,
+                            SubTotal = 28000m,
+                            UnitPrice = 28000m
                         },
                         new
                         {
@@ -566,35 +566,35 @@ namespace MiniSupermarket.API.Migrations
                             OrderId = 1,
                             ProductId = 6,
                             Quantity = 1,
-                            SubTotal = 195000m,
-                            UnitPrice = 195000m
+                            SubTotal = 26000m,
+                            UnitPrice = 26000m
                         },
                         new
                         {
                             OrderDetailId = 3,
                             OrderId = 2,
                             ProductId = 2,
-                            Quantity = 2,
-                            SubTotal = 76000m,
-                            UnitPrice = 38000m
+                            Quantity = 1,
+                            SubTotal = 115000m,
+                            UnitPrice = 115000m
                         },
                         new
                         {
                             OrderDetailId = 4,
                             OrderId = 2,
-                            ProductId = 9,
-                            Quantity = 2,
-                            SubTotal = 250000m,
-                            UnitPrice = 125000m
+                            ProductId = 1,
+                            Quantity = 1,
+                            SubTotal = 28000m,
+                            UnitPrice = 28000m
                         },
                         new
                         {
                             OrderDetailId = 5,
                             OrderId = 3,
                             ProductId = 3,
-                            Quantity = 2,
-                            SubTotal = 90000m,
-                            UnitPrice = 45000m
+                            Quantity = 1,
+                            SubTotal = 128000m,
+                            UnitPrice = 128000m
                         },
                         new
                         {
@@ -602,8 +602,8 @@ namespace MiniSupermarket.API.Migrations
                             OrderId = 3,
                             ProductId = 5,
                             Quantity = 2,
-                            SubTotal = 330000m,
-                            UnitPrice = 165000m
+                            SubTotal = 20000m,
+                            UnitPrice = 10000m
                         },
                         new
                         {
@@ -611,215 +611,215 @@ namespace MiniSupermarket.API.Migrations
                             OrderId = 4,
                             ProductId = 4,
                             Quantity = 2,
-                            SubTotal = 84000m,
-                            UnitPrice = 42000m
+                            SubTotal = 70000m,
+                            UnitPrice = 35000m
                         },
                         new
                         {
                             OrderDetailId = 8,
                             OrderId = 4,
+                            ProductId = 15,
+                            Quantity = 0,
+                            SubTotal = 0m,
+                            UnitPrice = 12000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 9,
+                            OrderId = 5,
+                            ProductId = 10,
+                            Quantity = 3,
+                            SubTotal = 45000m,
+                            UnitPrice = 15000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 10,
+                            OrderId = 5,
+                            ProductId = 5,
+                            Quantity = 0,
+                            SubTotal = 0m,
+                            UnitPrice = 10000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 11,
+                            OrderId = 6,
                             ProductId = 7,
+                            Quantity = 2,
+                            SubTotal = 36000m,
+                            UnitPrice = 18000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 12,
+                            OrderId = 6,
+                            ProductId = 6,
+                            Quantity = 1,
+                            SubTotal = 26000m,
+                            UnitPrice = 26000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 13,
+                            OrderId = 7,
+                            ProductId = 13,
+                            Quantity = 1,
+                            SubTotal = 190000m,
+                            UnitPrice = 190000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 14,
+                            OrderId = 7,
+                            ProductId = 12,
                             Quantity = 1,
                             SubTotal = 48000m,
                             UnitPrice = 48000m
                         },
                         new
                         {
-                            OrderDetailId = 9,
-                            OrderId = 5,
-                            ProductId = 7,
-                            Quantity = 2,
-                            SubTotal = 96000m,
-                            UnitPrice = 48000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 10,
-                            OrderId = 5,
-                            ProductId = 13,
-                            Quantity = 1,
-                            SubTotal = 85000m,
-                            UnitPrice = 85000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 11,
-                            OrderId = 6,
-                            ProductId = 12,
-                            Quantity = 1,
-                            SubTotal = 110000m,
-                            UnitPrice = 110000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 12,
-                            OrderId = 6,
-                            ProductId = 14,
-                            Quantity = 1,
-                            SubTotal = 32000m,
-                            UnitPrice = 32000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 13,
-                            OrderId = 7,
-                            ProductId = 10,
-                            Quantity = 2,
-                            SubTotal = 440000m,
-                            UnitPrice = 220000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 14,
-                            OrderId = 7,
-                            ProductId = 1,
-                            Quantity = 1,
-                            SubTotal = 35000m,
-                            UnitPrice = 35000m
-                        },
-                        new
-                        {
                             OrderDetailId = 15,
                             OrderId = 8,
                             ProductId = 8,
-                            Quantity = 3,
-                            SubTotal = 156000m,
-                            UnitPrice = 52000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 16,
-                            OrderId = 8,
-                            ProductId = 11,
-                            Quantity = 1,
-                            SubTotal = 95000m,
-                            UnitPrice = 95000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 17,
-                            OrderId = 9,
-                            ProductId = 4,
-                            Quantity = 2,
-                            SubTotal = 84000m,
-                            UnitPrice = 42000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 18,
-                            OrderId = 9,
-                            ProductId = 15,
-                            Quantity = 1,
-                            SubTotal = 250000m,
-                            UnitPrice = 250000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 19,
-                            OrderId = 10,
-                            ProductId = 13,
-                            Quantity = 1,
-                            SubTotal = 85000m,
-                            UnitPrice = 85000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 20,
-                            OrderId = 10,
-                            ProductId = 10,
-                            Quantity = 1,
-                            SubTotal = 220000m,
-                            UnitPrice = 220000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 21,
-                            OrderId = 11,
-                            ProductId = 5,
-                            Quantity = 3,
-                            SubTotal = 495000m,
-                            UnitPrice = 165000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 22,
-                            OrderId = 11,
-                            ProductId = 11,
-                            Quantity = 2,
-                            SubTotal = 190000m,
-                            UnitPrice = 95000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 23,
-                            OrderId = 12,
-                            ProductId = 14,
-                            Quantity = 1,
-                            SubTotal = 32000m,
-                            UnitPrice = 32000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 24,
-                            OrderId = 12,
-                            ProductId = 15,
-                            Quantity = 1,
-                            SubTotal = 250000m,
-                            UnitPrice = 250000m
-                        },
-                        new
-                        {
-                            OrderDetailId = 25,
-                            OrderId = 13,
-                            ProductId = 2,
                             Quantity = 2,
                             SubTotal = 76000m,
                             UnitPrice = 38000m
                         },
                         new
                         {
-                            OrderDetailId = 26,
-                            OrderId = 13,
-                            ProductId = 12,
-                            Quantity = 2,
-                            SubTotal = 220000m,
-                            UnitPrice = 110000m
+                            OrderDetailId = 16,
+                            OrderId = 8,
+                            ProductId = 9,
+                            Quantity = 0,
+                            SubTotal = 0m,
+                            UnitPrice = 24000m
                         },
                         new
                         {
-                            OrderDetailId = 27,
-                            OrderId = 14,
-                            ProductId = 1,
+                            OrderDetailId = 17,
+                            OrderId = 9,
+                            ProductId = 11,
+                            Quantity = 1,
+                            SubTotal = 42000m,
+                            UnitPrice = 42000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 18,
+                            OrderId = 9,
+                            ProductId = 5,
+                            Quantity = 10,
+                            SubTotal = 100000m,
+                            UnitPrice = 10000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 19,
+                            OrderId = 10,
+                            ProductId = 14,
+                            Quantity = 1,
+                            SubTotal = 22000m,
+                            UnitPrice = 22000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 20,
+                            OrderId = 10,
+                            ProductId = 11,
+                            Quantity = 1,
+                            SubTotal = 42000m,
+                            UnitPrice = 42000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 21,
+                            OrderId = 11,
+                            ProductId = 13,
+                            Quantity = 1,
+                            SubTotal = 190000m,
+                            UnitPrice = 190000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 22,
+                            OrderId = 11,
+                            ProductId = 9,
+                            Quantity = 1,
+                            SubTotal = 24000m,
+                            UnitPrice = 24000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 23,
+                            OrderId = 12,
+                            ProductId = 4,
                             Quantity = 1,
                             SubTotal = 35000m,
                             UnitPrice = 35000m
                         },
                         new
                         {
+                            OrderDetailId = 24,
+                            OrderId = 12,
+                            ProductId = 14,
+                            Quantity = 1,
+                            SubTotal = 22000m,
+                            UnitPrice = 22000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 25,
+                            OrderId = 13,
+                            ProductId = 12,
+                            Quantity = 1,
+                            SubTotal = 48000m,
+                            UnitPrice = 48000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 26,
+                            OrderId = 13,
+                            ProductId = 9,
+                            Quantity = 1,
+                            SubTotal = 24000m,
+                            UnitPrice = 24000m
+                        },
+                        new
+                        {
+                            OrderDetailId = 27,
+                            OrderId = 14,
+                            ProductId = 15,
+                            Quantity = 1,
+                            SubTotal = 12000m,
+                            UnitPrice = 12000m
+                        },
+                        new
+                        {
                             OrderDetailId = 28,
                             OrderId = 14,
-                            ProductId = 8,
+                            ProductId = 1,
                             Quantity = 1,
-                            SubTotal = 52000m,
-                            UnitPrice = 52000m
+                            SubTotal = 28000m,
+                            UnitPrice = 28000m
                         },
                         new
                         {
                             OrderDetailId = 29,
                             OrderId = 15,
-                            ProductId = 3,
-                            Quantity = 2,
-                            SubTotal = 90000m,
-                            UnitPrice = 45000m
+                            ProductId = 2,
+                            Quantity = 1,
+                            SubTotal = 115000m,
+                            UnitPrice = 115000m
                         },
                         new
                         {
                             OrderDetailId = 30,
                             OrderId = 15,
-                            ProductId = 9,
-                            Quantity = 2,
-                            SubTotal = 250000m,
-                            UnitPrice = 125000m
+                            ProductId = 1,
+                            Quantity = 1,
+                            SubTotal = 28000m,
+                            UnitPrice = 28000m
                         });
                 });
 
@@ -864,152 +864,152 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             ProductId = 1,
-                            Barcode = "8930000001010",
+                            Barcode = "8935001100011",
                             CategoryId = 1,
-                            Price = 35000m,
-                            ProductName = "Cải bó xôi hữu cơ Farm",
-                            StockQuantity = 80,
-                            Unit = "Bó 500g"
+                            Price = 28000m,
+                            ProductName = "Nước mắm Nam Ngư Đệ Nhị 900ml",
+                            StockQuantity = 120,
+                            Unit = "Chai"
                         },
                         new
                         {
                             ProductId = 2,
-                            Barcode = "8930000002017",
+                            Barcode = "8935001100028",
                             CategoryId = 2,
-                            Price = 38000m,
-                            ProductName = "Cà rốt giống củ bản địa",
-                            StockQuantity = 100,
-                            Unit = "Kg"
+                            Price = 115000m,
+                            ProductName = "Gạo Tấm Thơm Chợ Đào (Bao 5kg)",
+                            StockQuantity = 80,
+                            Unit = "Bao 5kg"
                         },
                         new
                         {
                             ProductId = 3,
-                            Barcode = "8930000003014",
+                            Barcode = "8935001100035",
                             CategoryId = 3,
-                            Price = 45000m,
-                            ProductName = "Ổi lê hữu cơ chín cây",
+                            Price = 128000m,
+                            ProductName = "Thùng mì Hảo Hảo tôm chua cay 30 gói",
                             StockQuantity = 60,
-                            Unit = "Kg"
+                            Unit = "Thùng"
                         },
                         new
                         {
                             ProductId = 4,
-                            Barcode = "8930000004011",
+                            Barcode = "8935001100042",
                             CategoryId = 4,
-                            Price = 42000m,
-                            ProductName = "Nấm đùi gà tươi Organic",
-                            StockQuantity = 50,
-                            Unit = "Gói 250g"
+                            Price = 35000m,
+                            ProductName = "Kẹo dừa Bến Tre gói truyền thống",
+                            StockQuantity = 150,
+                            Unit = "Gói 300g"
                         },
                         new
                         {
                             ProductId = 5,
-                            Barcode = "8930000005018",
+                            Barcode = "8935001100059",
                             CategoryId = 5,
-                            Price = 165000m,
-                            ProductName = "Thịt ba chỉ heo thảo mộc",
-                            StockQuantity = 40,
-                            Unit = "Khay 500g"
+                            Price = 10000m,
+                            ProductName = "Nước ngọt Xá Xị Chương Dương lon 330ml",
+                            StockQuantity = 240,
+                            Unit = "Lon"
                         },
                         new
                         {
                             ProductId = 6,
-                            Barcode = "8930000006015",
+                            Barcode = "8935001100066",
                             CategoryId = 6,
-                            Price = 195000m,
-                            ProductName = "Cá lăng sinh thái sông Đà",
-                            StockQuantity = 6,
-                            Unit = "Kg"
+                            Price = 26000m,
+                            ProductName = "Sữa đặc Ông Thọ nắp bật lon 380g",
+                            StockQuantity = 180,
+                            Unit = "Lon"
                         },
                         new
                         {
                             ProductId = 7,
-                            Barcode = "8930000007012",
+                            Barcode = "8935001100073",
                             CategoryId = 7,
-                            Price = 48000m,
-                            ProductName = "Trứng gà ta thảo mộc tự nhiên",
-                            StockQuantity = 120,
-                            Unit = "Hộp 10 quả"
+                            Price = 18000m,
+                            ProductName = "Cá hộp xốt cà Ba Cô Gái lon 155g",
+                            StockQuantity = 140,
+                            Unit = "Hộp"
                         },
                         new
                         {
                             ProductId = 8,
-                            Barcode = "8930000008019",
+                            Barcode = "8935001100080",
                             CategoryId = 8,
-                            Price = 52000m,
-                            ProductName = "Sữa bò tươi thanh trùng Organic",
-                            StockQuantity = 45,
-                            Unit = "Chai 900ml"
+                            Price = 38000m,
+                            ProductName = "Bột giặt Viso Trắng Sáng gói 1kg",
+                            StockQuantity = 90,
+                            Unit = "Gói 1kg"
                         },
                         new
                         {
                             ProductId = 9,
-                            Barcode = "8930000009016",
+                            Barcode = "8935001100097",
                             CategoryId = 9,
-                            Price = 125000m,
-                            ProductName = "Gạo ST25 hữu cơ ruộng rươi",
-                            StockQuantity = 70,
-                            Unit = "Túi 2kg"
+                            Price = 24000m,
+                            ProductName = "Nước rửa chén Mỹ Hảo hương chanh 750ml",
+                            StockQuantity = 110,
+                            Unit = "Chai"
                         },
                         new
                         {
                             ProductId = 10,
-                            Barcode = "8930000010013",
+                            Barcode = "8935001100103",
                             CategoryId = 10,
-                            Price = 220000m,
-                            ProductName = "Mật ong hoa rừng nguyên chất",
-                            StockQuantity = 35,
-                            Unit = "Hũ 500ml"
+                            Price = 15000m,
+                            ProductName = "Xà bông thơm Cô Ba Sài Gòn 90g",
+                            StockQuantity = 200,
+                            Unit = "Cục"
                         },
                         new
                         {
                             ProductId = 11,
-                            Barcode = "8930000011010",
+                            Barcode = "8935001100110",
                             CategoryId = 11,
-                            Price = 95000m,
-                            ProductName = "Nước mắm truyền thống cá cơm 40N",
-                            StockQuantity = 50,
-                            Unit = "Chai 500ml"
+                            Price = 42000m,
+                            ProductName = "Lốc giấy vệ sinh Sài Gòn Extra 10 cuộn",
+                            StockQuantity = 75,
+                            Unit = "Lốc"
                         },
                         new
                         {
                             ProductId = 12,
-                            Barcode = "8930000012017",
+                            Barcode = "8935001100127",
                             CategoryId = 12,
-                            Price = 110000m,
-                            ProductName = "Dầu mè vàng ép lạnh thủ công",
-                            StockQuantity = 40,
-                            Unit = "Chai 250ml"
+                            Price = 48000m,
+                            ProductName = "Dầu ăn thực vật Tường An Cooking Oil 1L",
+                            StockQuantity = 130,
+                            Unit = "Chai 1L"
                         },
                         new
                         {
                             ProductId = 13,
-                            Barcode = "8930000013014",
+                            Barcode = "8935001100134",
                             CategoryId = 13,
-                            Price = 85000m,
-                            ProductName = "Trà hoa cúc sấy lạnh tự nhiên",
-                            StockQuantity = 55,
-                            Unit = "Hũ 80g"
+                            Price = 190000m,
+                            ProductName = "Tôm khô đất Cà Mau loại 1 (Hũ 200g)",
+                            StockQuantity = 40,
+                            Unit = "Hũ 200g"
                         },
                         new
                         {
                             ProductId = 14,
-                            Barcode = "8930000014011",
+                            Barcode = "8935001100141",
                             CategoryId = 14,
-                            Price = 32000m,
-                            ProductName = "Dưa cải củ lên men tự nhiên",
-                            StockQuantity = 60,
-                            Unit = "Hũ 450g"
+                            Price = 22000m,
+                            ProductName = "Trà lài Sài Gòn gói thiếc thơm lâu 100g",
+                            StockQuantity = 160,
+                            Unit = "Gói 100g"
                         },
                         new
                         {
                             ProductId = 15,
-                            Barcode = "8930000015018",
+                            Barcode = "8935001100158",
                             CategoryId = 15,
-                            Price = 250000m,
-                            ProductName = "Combo Rau Củ Xanh Dinh Dưỡng Tuần",
-                            StockQuantity = 8,
-                            Unit = "Set 5kg"
+                            Price = 12000m,
+                            ProductName = "Vỉ pin đại Con Thỏ (Lốc 2 viên AA)",
+                            StockQuantity = 150,
+                            Unit = "Vỉ"
                         });
                 });
 
@@ -1036,19 +1036,19 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Toàn quyền toàn bộ hệ thống",
+                            Description = "Chủ tiệm Cô Ba - Quản lý toàn bộ sổ sách, giá cả và tồn kho",
                             RoleName = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            Description = "Màn hình POS, Khách hàng thành viên",
+                            Description = "Thu ngân quầy tạp hóa - Bán lẻ, tính tiền và in bill cho khách",
                             RoleName = "Cashier"
                         },
                         new
                         {
                             Id = 3,
-                            Description = "Sản phẩm, Nhóm hàng, Nhập xuất kho",
+                            Description = "Thủ kho tiệm tạp hóa - Nhập bao hàng, kiểm date và bốc dỡ kho",
                             RoleName = "Warehouse"
                         });
                 });
@@ -1089,122 +1089,122 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             Id = 1,
-                            FullName = "Nguyễn Quản Trị",
-                            Password = "123456",
+                            FullName = "Cô Ba Sài Gòn (Chủ Tiệm)",
+                            Password = "123",
                             RoleId = 1,
-                            Username = "admin01"
+                            Username = "coba_chutiem"
                         },
                         new
                         {
                             Id = 2,
-                            FullName = "Trần Giám Đốc",
-                            Password = "123456",
+                            FullName = "Anh Hai Trưởng Cửa Hàng",
+                            Password = "123",
                             RoleId = 1,
-                            Username = "admin02"
+                            Username = "anhha_quanly"
                         },
                         new
                         {
                             Id = 3,
-                            FullName = "Lê Thu Ngân",
-                            Password = "123456",
+                            FullName = "Bé Mai Thu Ngân Ca Sáng",
+                            Password = "123",
                             RoleId = 2,
-                            Username = "cashier01"
+                            Username = "thungan_mai"
                         },
                         new
                         {
                             Id = 4,
-                            FullName = "Phạm Bán Hàng",
-                            Password = "123456",
+                            FullName = "Bé Cúc Thu Ngân Ca Chiều",
+                            Password = "123",
                             RoleId = 2,
-                            Username = "cashier02"
+                            Username = "thungan_cuc"
                         },
                         new
                         {
                             Id = 5,
-                            FullName = "Hoàng Thu Ngân",
-                            Password = "123456",
+                            FullName = "Cô Lan Bán Quầy Trước",
+                            Password = "123",
                             RoleId = 2,
-                            Username = "cashier03"
+                            Username = "thungan_lan"
                         },
                         new
                         {
                             Id = 6,
-                            FullName = "Vũ Thị Quầy",
-                            Password = "123456",
+                            FullName = "Em Đào Quẹt Mã POS",
+                            Password = "123",
                             RoleId = 2,
-                            Username = "cashier04"
+                            Username = "thungan_dao"
                         },
                         new
                         {
                             Id = 7,
-                            FullName = "Đỗ Bán Lẻ",
-                            Password = "123456",
+                            FullName = "Chị Trúc Kiểm Tiền Ca Tối",
+                            Password = "123",
                             RoleId = 2,
-                            Username = "cashier05"
+                            Username = "thungan_truc"
                         },
                         new
                         {
                             Id = 8,
-                            FullName = "Ngô Quản Kho",
-                            Password = "123456",
+                            FullName = "Anh Ba Bốc Vác Kho Gạo",
+                            Password = "123",
                             RoleId = 3,
-                            Username = "ware01"
+                            Username = "kho_anhba"
                         },
                         new
                         {
                             Id = 9,
-                            FullName = "Bùi Kiểm Kê",
-                            Password = "123456",
+                            FullName = "Chú Tư Kiểm Thùng Nước Ngọt",
+                            Password = "123",
                             RoleId = 3,
-                            Username = "ware02"
+                            Username = "kho_chutu"
                         },
                         new
                         {
                             Id = 10,
-                            FullName = "Dương Thủ Kho",
-                            Password = "123456",
+                            FullName = "Anh Sáu Phụ Kho Đồ Hộp",
+                            Password = "123",
                             RoleId = 3,
-                            Username = "ware03"
+                            Username = "kho_anhsau"
                         },
                         new
                         {
                             Id = 11,
-                            FullName = "Lý Nhập Hàng",
-                            Password = "123456",
+                            FullName = "Út Đực Nhận Hàng Chợ Đầu Mối",
+                            Password = "123",
                             RoleId = 3,
-                            Username = "ware04"
+                            Username = "kho_beut"
                         },
                         new
                         {
                             Id = 12,
-                            FullName = "Đặng Hỗ Trợ",
-                            Password = "123456",
+                            FullName = "Kế Toán Sổ Sách Tiệm",
+                            Password = "123",
                             RoleId = 1,
-                            Username = "admin_backup"
+                            Username = "admin_phu"
                         },
                         new
                         {
                             Id = 13,
-                            FullName = "Hồ Ca Chiều",
-                            Password = "123456",
+                            FullName = "Chị Tuyết Ca Trưa Quầy Trái",
+                            Password = "123",
                             RoleId = 2,
-                            Username = "cashier06"
+                            Username = "thungan_tuyet"
                         },
                         new
                         {
                             Id = 14,
-                            FullName = "Trương Vận Chuyển",
-                            Password = "123456",
+                            FullName = "Anh Năm Chạy Xe Giao Hàng Kho",
+                            Password = "123",
                             RoleId = 3,
-                            Username = "ware05"
+                            Username = "kho_anhnam"
                         },
                         new
                         {
                             Id = 15,
-                            FullName = "Mai Giám Sát",
-                            Password = "123456",
+                            FullName = "Bác Tám Giám Sát Cửa Hàng",
+                            Password = "123",
                             RoleId = 1,
-                            Username = "supervisor"
+                            Username = "giamsat_tiem"
                         });
                 });
 

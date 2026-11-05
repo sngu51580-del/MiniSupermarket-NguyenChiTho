@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * DTO: Top sản phẩm bán chạy nhất
  */
 namespace MiniSupermarket.API.Dto

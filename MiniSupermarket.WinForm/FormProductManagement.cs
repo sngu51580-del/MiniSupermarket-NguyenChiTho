@@ -1,5 +1,5 @@
 /*
- * Họ tên sinh viên: Nguyen Quoc Vuong
+ * Họ tên sinh viên: Nguyen Chi Tho
  * Mã môn học: 229162 – Lập trình Ứng dụng
  * Mô tả: Code-behind xử lý hiển thị danh sách phân trang LINQ, Eager Loading, tìm kiếm, lọc theo nhóm hàng và CRUD sản phẩm
  */
@@ -647,7 +647,7 @@ namespace MiniSupermarket.WinForms
                     }
 
                     // Lưu file với encoding UTF-8 có BOM để Microsoft Excel đọc font tiếng Việt chính xác
-                    await System.IO.File.WriteAllTextAsync(sfd.FileName, sb.ToString(), System.Text.Encoding.UTF8);
+                    await System.IO.File.WriteAllTextAsync(sfd.FileName, sb.ToString(), new System.Text.UTF8Encoding(true));
 
                     MessageBox.Show($"Đã xuất thành công {products.Count} sản phẩm ra file:\n{sfd.FileName}",
                         "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);

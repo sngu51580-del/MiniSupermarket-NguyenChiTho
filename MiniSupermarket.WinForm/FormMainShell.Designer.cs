@@ -55,7 +55,7 @@ namespace MiniSupermarket.WinForms
             // 
             // panelSidebar
             // 
-            panelSidebar.BackColor = Color.FromArgb(15, 23, 42);
+            panelSidebar.BackColor = Color.FromArgb(30, 27, 75);
             panelSidebar.Controls.Add(btnUserManage);
             panelSidebar.Controls.Add(btnReports);
             panelSidebar.Controls.Add(lblNavAdmin);
@@ -75,12 +75,12 @@ namespace MiniSupermarket.WinForms
             // 
             // btnUserManage
             // 
-            btnUserManage.BackColor = Color.FromArgb(15, 23, 42);
+            btnUserManage.BackColor = Color.FromArgb(30, 27, 75);
             btnUserManage.Cursor = Cursors.Hand;
             btnUserManage.Dock = DockStyle.Top;
             btnUserManage.FlatAppearance.BorderSize = 0;
-            btnUserManage.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 41, 59);
-            btnUserManage.FlatAppearance.MouseOverBackColor = Color.FromArgb(51, 65, 85);
+            btnUserManage.FlatAppearance.MouseDownBackColor = Color.FromArgb(49, 46, 129);
+            btnUserManage.FlatAppearance.MouseOverBackColor = Color.FromArgb(67, 56, 202);
             btnUserManage.FlatStyle = FlatStyle.Flat;
             btnUserManage.Font = new Font("Segoe UI", 10F);
             btnUserManage.ForeColor = Color.FromArgb(226, 232, 240);
@@ -96,12 +96,12 @@ namespace MiniSupermarket.WinForms
             // 
             // btnReports
             // 
-            btnReports.BackColor = Color.FromArgb(15, 23, 42);
+            btnReports.BackColor = Color.FromArgb(30, 27, 75);
             btnReports.Cursor = Cursors.Hand;
             btnReports.Dock = DockStyle.Top;
             btnReports.FlatAppearance.BorderSize = 0;
-            btnReports.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 41, 59);
-            btnReports.FlatAppearance.MouseOverBackColor = Color.FromArgb(51, 65, 85);
+            btnReports.FlatAppearance.MouseDownBackColor = Color.FromArgb(49, 46, 129);
+            btnReports.FlatAppearance.MouseOverBackColor = Color.FromArgb(67, 56, 202);
             btnReports.FlatStyle = FlatStyle.Flat;
             btnReports.Font = new Font("Segoe UI", 10F);
             btnReports.ForeColor = Color.FromArgb(226, 232, 240);
@@ -130,12 +130,12 @@ namespace MiniSupermarket.WinForms
             // 
             // btnCustomer
             // 
-            btnCustomer.BackColor = Color.FromArgb(15, 23, 42);
+            btnCustomer.BackColor = Color.FromArgb(30, 27, 75);
             btnCustomer.Cursor = Cursors.Hand;
             btnCustomer.Dock = DockStyle.Top;
             btnCustomer.FlatAppearance.BorderSize = 0;
-            btnCustomer.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 41, 59);
-            btnCustomer.FlatAppearance.MouseOverBackColor = Color.FromArgb(51, 65, 85);
+            btnCustomer.FlatAppearance.MouseDownBackColor = Color.FromArgb(49, 46, 129);
+            btnCustomer.FlatAppearance.MouseOverBackColor = Color.FromArgb(67, 56, 202);
             btnCustomer.FlatStyle = FlatStyle.Flat;
             btnCustomer.Font = new Font("Segoe UI", 10F);
             btnCustomer.ForeColor = Color.FromArgb(226, 232, 240);
@@ -151,12 +151,12 @@ namespace MiniSupermarket.WinForms
             // 
             // btnProduct
             // 
-            btnProduct.BackColor = Color.FromArgb(15, 23, 42);
+            btnProduct.BackColor = Color.FromArgb(30, 27, 75);
             btnProduct.Cursor = Cursors.Hand;
             btnProduct.Dock = DockStyle.Top;
             btnProduct.FlatAppearance.BorderSize = 0;
-            btnProduct.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 41, 59);
-            btnProduct.FlatAppearance.MouseOverBackColor = Color.FromArgb(51, 65, 85);
+            btnProduct.FlatAppearance.MouseDownBackColor = Color.FromArgb(49, 46, 129);
+            btnProduct.FlatAppearance.MouseOverBackColor = Color.FromArgb(67, 56, 202);
             btnProduct.FlatStyle = FlatStyle.Flat;
             btnProduct.Font = new Font("Segoe UI", 10F);
             btnProduct.ForeColor = Color.FromArgb(226, 232, 240);
@@ -172,12 +172,12 @@ namespace MiniSupermarket.WinForms
             // 
             // btnCategory
             // 
-            btnCategory.BackColor = Color.FromArgb(15, 23, 42);
+            btnCategory.BackColor = Color.FromArgb(30, 27, 75);
             btnCategory.Cursor = Cursors.Hand;
             btnCategory.Dock = DockStyle.Top;
             btnCategory.FlatAppearance.BorderSize = 0;
-            btnCategory.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 41, 59);
-            btnCategory.FlatAppearance.MouseOverBackColor = Color.FromArgb(51, 65, 85);
+            btnCategory.FlatAppearance.MouseDownBackColor = Color.FromArgb(49, 46, 129);
+            btnCategory.FlatAppearance.MouseOverBackColor = Color.FromArgb(67, 56, 202);
             btnCategory.FlatStyle = FlatStyle.Flat;
             btnCategory.Font = new Font("Segoe UI", 10F);
             btnCategory.ForeColor = Color.FromArgb(226, 232, 240);
@@ -206,12 +206,12 @@ namespace MiniSupermarket.WinForms
             // 
             // btnPOS
             // 
-            btnPOS.BackColor = Color.FromArgb(15, 23, 42);
+            btnPOS.BackColor = Color.FromArgb(30, 27, 75);
             btnPOS.Cursor = Cursors.Hand;
             btnPOS.Dock = DockStyle.Top;
             btnPOS.FlatAppearance.BorderSize = 0;
-            btnPOS.FlatAppearance.MouseDownBackColor = Color.FromArgb(30, 41, 59);
-            btnPOS.FlatAppearance.MouseOverBackColor = Color.FromArgb(51, 65, 85);
+            btnPOS.FlatAppearance.MouseDownBackColor = Color.FromArgb(49, 46, 129);
+            btnPOS.FlatAppearance.MouseOverBackColor = Color.FromArgb(67, 56, 202);
             btnPOS.FlatStyle = FlatStyle.Flat;
             btnPOS.Font = new Font("Segoe UI", 10.5F, FontStyle.Bold);
             btnPOS.ForeColor = Color.White;
@@ -240,7 +240,7 @@ namespace MiniSupermarket.WinForms
             // 
             // panelLogo
             // 
-            panelLogo.BackColor = Color.FromArgb(15, 23, 42);
+            panelLogo.BackColor = Color.FromArgb(30, 27, 75);
             panelLogo.Controls.Add(lblLogoTag);
             panelLogo.Controls.Add(lblLogoSub);
             panelLogo.Controls.Add(lblLogo);
@@ -254,7 +254,7 @@ namespace MiniSupermarket.WinForms
             // lblLogoTag
             // 
             lblLogoTag.AutoSize = true;
-            lblLogoTag.BackColor = Color.FromArgb(5, 150, 105);
+            lblLogoTag.BackColor = Color.FromArgb(124, 58, 237);
             lblLogoTag.Font = new Font("Segoe UI", 7F, FontStyle.Bold);
             lblLogoTag.ForeColor = Color.White;
             lblLogoTag.Location = new Point(164, 24);
@@ -262,7 +262,7 @@ namespace MiniSupermarket.WinForms
             lblLogoTag.Padding = new Padding(4, 2, 4, 2);
             lblLogoTag.Size = new Size(57, 16);
             lblLogoTag.TabIndex = 2;
-            lblLogoTag.Text = "ORGANIC";
+            lblLogoTag.Text = "SÀI GÒN";
             lblLogoTag.UseMnemonic = false;
             // 
             // lblLogoSub
@@ -274,7 +274,7 @@ namespace MiniSupermarket.WinForms
             lblLogoSub.Name = "lblLogoSub";
             lblLogoSub.Size = new Size(188, 13);
             lblLogoSub.TabIndex = 1;
-            lblLogoSub.Text = "Hệ thống Bán lẻ & Tồn kho Siêu thị";
+            lblLogoSub.Text = "Tiệm Tạp Hóa & Bách Hóa Tổng Hợp";
             lblLogoSub.UseMnemonic = false;
             // 
             // lblLogo
@@ -286,12 +286,12 @@ namespace MiniSupermarket.WinForms
             lblLogo.Name = "lblLogo";
             lblLogo.Size = new Size(142, 25);
             lblLogo.TabIndex = 0;
-            lblLogo.Text = "🛒 MINIMART";
+            lblLogo.Text = "👑 CÔ BA";
             lblLogo.UseMnemonic = false;
             // 
             // panelUserFooter
             // 
-            panelUserFooter.BackColor = Color.FromArgb(10, 15, 30);
+            panelUserFooter.BackColor = Color.FromArgb(19, 17, 54);
             panelUserFooter.Controls.Add(btnLogout);
             panelUserFooter.Controls.Add(lblUserRoleBadge);
             panelUserFooter.Controls.Add(lblUserFullName);
@@ -305,7 +305,7 @@ namespace MiniSupermarket.WinForms
             // 
             // btnLogout
             // 
-            btnLogout.BackColor = Color.FromArgb(30, 41, 59);
+            btnLogout.BackColor = Color.FromArgb(49, 46, 129);
             btnLogout.Cursor = Cursors.Hand;
             btnLogout.Dock = DockStyle.Bottom;
             btnLogout.FlatAppearance.BorderSize = 0;
@@ -325,7 +325,7 @@ namespace MiniSupermarket.WinForms
             // lblUserRoleBadge
             // 
             lblUserRoleBadge.AutoSize = true;
-            lblUserRoleBadge.BackColor = Color.FromArgb(5, 150, 105);
+            lblUserRoleBadge.BackColor = Color.FromArgb(124, 58, 237);
             lblUserRoleBadge.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
             lblUserRoleBadge.ForeColor = Color.White;
             lblUserRoleBadge.Location = new Point(56, 30);
@@ -345,14 +345,14 @@ namespace MiniSupermarket.WinForms
             lblUserFullName.Name = "lblUserFullName";
             lblUserFullName.Size = new Size(59, 17);
             lblUserFullName.TabIndex = 1;
-            lblUserFullName.Text = "admin01";
+            lblUserFullName.Text = "coba_chutiem";
             lblUserFullName.UseMnemonic = false;
             // 
             // lblAvatar
             // 
-            lblAvatar.BackColor = Color.FromArgb(30, 41, 59);
+            lblAvatar.BackColor = Color.FromArgb(49, 46, 129);
             lblAvatar.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblAvatar.ForeColor = Color.FromArgb(52, 211, 153);
+            lblAvatar.ForeColor = Color.FromArgb(196, 181, 253);
             lblAvatar.Location = new Point(12, 10);
             lblAvatar.Name = "lblAvatar";
             lblAvatar.Size = new Size(36, 36);
@@ -402,7 +402,7 @@ namespace MiniSupermarket.WinForms
             lblUserInfo.Padding = new Padding(10, 6, 10, 6);
             lblUserInfo.Size = new Size(140, 27);
             lblUserInfo.TabIndex = 1;
-            lblUserInfo.Text = "👤 admin01 [ADMIN]";
+            lblUserInfo.Text = "👤 coba_chutiem [ADMIN]";
             lblUserInfo.UseMnemonic = false;
             // 
             // lblClock
@@ -421,16 +421,16 @@ namespace MiniSupermarket.WinForms
             // lblServerStatus
             // 
             lblServerStatus.AutoSize = true;
-            lblServerStatus.BackColor = Color.FromArgb(236, 253, 245);
+            lblServerStatus.BackColor = Color.FromArgb(245, 243, 255);
             lblServerStatus.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
-            lblServerStatus.ForeColor = Color.FromArgb(5, 150, 105);
+            lblServerStatus.ForeColor = Color.FromArgb(124, 58, 237);
             lblServerStatus.Location = new Point(16, 19);
             lblServerStatus.Margin = new Padding(8, 3, 0, 0);
             lblServerStatus.Name = "lblServerStatus";
             lblServerStatus.Padding = new Padding(8, 4, 8, 4);
             lblServerStatus.Size = new Size(124, 23);
             lblServerStatus.TabIndex = 4;
-            lblServerStatus.Text = "🟢 Máy chủ: Trực tuyến";
+            lblServerStatus.Text = "🟣 Máy chủ: Trực tuyến";
             lblServerStatus.UseMnemonic = false;
             // 
             // lblBreadcrumb
@@ -442,7 +442,7 @@ namespace MiniSupermarket.WinForms
             lblBreadcrumb.Name = "lblBreadcrumb";
             lblBreadcrumb.Size = new Size(183, 13);
             lblBreadcrumb.TabIndex = 2;
-            lblBreadcrumb.Text = "HỆ THỐNG QUẢN LÝ SIÊU THỊ  ›  ";
+            lblBreadcrumb.Text = "TIỆM TẠP HÓA CÔ BA SÀI GÒN  ›  ";
             lblBreadcrumb.UseMnemonic = false;
             // 
             // lblTitle
@@ -482,7 +482,7 @@ namespace MiniSupermarket.WinForms
             MinimumSize = new Size(1200, 720);
             Name = "FormMainShell";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "MiniMart POS - Hệ thống Quản lý Bán lẻ & Tồn kho Siêu thị Nông sản Hữu cơ";
+            Text = "Tiệm Tạp Hóa Cô Ba Sài Gòn - Hệ thống Quản lý Bán lẻ & Tồn kho POS";
             panelSidebar.ResumeLayout(false);
             panelLogo.ResumeLayout(false);
             panelLogo.PerformLayout();

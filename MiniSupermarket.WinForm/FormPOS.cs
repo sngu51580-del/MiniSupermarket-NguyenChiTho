@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -23,10 +23,7 @@ namespace MiniSupermarket.WinForms.Forms
         {
             InitializeComponent();
 
-            _client = new HttpClient
-            {
-                BaseAddress = new Uri(ApiClientService.ApiBaseUrl)
-            };
+            _client = ApiClientService.CreateClient();
 
             cboPaymentMethod.SelectedIndex = 0;
 
@@ -158,6 +155,8 @@ namespace MiniSupermarket.WinForms.Forms
 
         private void SetupEvents()
         {
+            this.KeyPreview = true;
+            this.KeyDown += async (s, e) => { if (e.KeyCode == Keys.F9 && btnPay.Enabled) { e.SuppressKeyPress = true; await ProcessPaymentAsync(); } };
             btnAdd.Click += BtnAdd_Click;
 
             btnSearch.Click += async (s, e) =>
@@ -319,6 +318,20 @@ namespace MiniSupermarket.WinForms.Forms
             try
             {
                 AddAuthorizationHeader();
+
+                // Tiêu chí 32: Ưu tiên tra cứu nhanh Barcode bằng ADO.NET (api/ado-products/barcode/{barcode})
+                var adoResponse = await _client.GetAsync($"ado-products/barcode/{Uri.EscapeDataString(barcode)}");
+                if (adoResponse.IsSuccessStatusCode)
+                {
+                    var adoProduct = await adoResponse.Content.ReadFromJsonAsync<ProductDto>();
+                    if (adoProduct != null)
+                    {
+                        AddProductToCart(adoProduct);
+                        txtBarcode.Clear();
+                        txtBarcode.Focus();
+                        return;
+                    }
+                }
 
                 var response = await _client.GetAsync($"products/search?keyword={Uri.EscapeDataString(barcode)}");
 

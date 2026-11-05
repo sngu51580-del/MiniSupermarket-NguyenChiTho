@@ -119,7 +119,7 @@ namespace MiniSupermarket.WinForms
             // 
             // btnAddUser
             // 
-            btnAddUser.BackColor = Color.FromArgb(5, 150, 105);
+            btnAddUser.BackColor = Color.FromArgb(124, 58, 237);
             btnAddUser.Cursor = Cursors.Hand;
             btnAddUser.FlatAppearance.BorderSize = 0;
             btnAddUser.FlatStyle = FlatStyle.Flat;

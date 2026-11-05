@@ -44,7 +44,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // panelHeader
             // 
-            panelHeader.BackColor = System.Drawing.Color.FromArgb(15, 23, 42);
+            panelHeader.BackColor = System.Drawing.Color.FromArgb(30, 27, 75);
             panelHeader.Controls.Add(lblSubTitle);
             panelHeader.Controls.Add(lblTitle);
             panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -99,7 +99,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // btnLookup
             // 
-            btnLookup.BackColor = System.Drawing.Color.FromArgb(37, 99, 235);
+            btnLookup.BackColor = System.Drawing.Color.FromArgb(124, 58, 237);
             btnLookup.Cursor = System.Windows.Forms.Cursors.Hand;
             btnLookup.FlatAppearance.BorderSize = 0;
             btnLookup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -160,7 +160,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             lblStatusValue.AutoSize = true;
             lblStatusValue.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
-            lblStatusValue.ForeColor = System.Drawing.Color.FromArgb(5, 150, 105);
+            lblStatusValue.ForeColor = System.Drawing.Color.FromArgb(124, 58, 237);
             lblStatusValue.Location = new System.Drawing.Point(340, 65);
             lblStatusValue.Name = "lblStatusValue";
             lblStatusValue.Size = new System.Drawing.Size(95, 17);

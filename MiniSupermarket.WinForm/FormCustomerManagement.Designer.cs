@@ -307,7 +307,7 @@ namespace MiniSupermarket.WinForms
             cbMembershipRank.DropDownStyle = ComboBoxStyle.DropDownList;
             cbMembershipRank.Font = new Font("Segoe UI", 10F);
             cbMembershipRank.FormattingEnabled = true;
-            cbMembershipRank.Items.AddRange(new object[] { "Chuẩn", "Bạc", "Vàng", "Bạch Kim" });
+            cbMembershipRank.Items.AddRange(new object[] { "Mới", "Thân Thiết", "Bạc", "Vàng", "Kim Cương" });
             cbMembershipRank.Location = new Point(25, 340);
             cbMembershipRank.Name = "cbMembershipRank";
             cbMembershipRank.Size = new Size(320, 25);
@@ -461,7 +461,7 @@ namespace MiniSupermarket.WinForms
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.FromArgb(5, 150, 105);
+            btnAdd.BackColor = Color.FromArgb(124, 58, 237);
             btnAdd.Cursor = Cursors.Hand;
             btnAdd.FlatAppearance.BorderSize = 0;
             btnAdd.FlatStyle = FlatStyle.Flat;

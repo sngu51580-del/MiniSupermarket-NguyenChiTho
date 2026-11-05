@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * DTO: Tra cứu sản phẩm theo mã vạch và thống kê nhóm danh mục
  */
 namespace MiniSupermarket.API.Dto

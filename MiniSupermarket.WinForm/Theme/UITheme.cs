@@ -12,17 +12,17 @@ namespace MiniSupermarket.WinForms.Theme
         // =========================================================
 
         // Primary Emerald Palette (Thương hiệu Siêu thị Nông sản / Thực phẩm xanh)
-        public static readonly Color Primary = Color.FromArgb(16, 185, 129);        // Emerald 500
-        public static readonly Color PrimaryDark = Color.FromArgb(5, 150, 105);      // Emerald 600
-        public static readonly Color PrimaryDarker = Color.FromArgb(4, 120, 87);     // Emerald 700
-        public static readonly Color PrimaryLight = Color.FromArgb(209, 250, 229);   // Emerald 100
-        public static readonly Color PrimaryUltraLight = Color.FromArgb(236, 253, 245); // Emerald 50
+        public static readonly Color Primary = Color.FromArgb(139, 92, 246);        // Violet 500
+        public static readonly Color PrimaryDark = Color.FromArgb(124, 58, 237);      // Violet 600
+        public static readonly Color PrimaryDarker = Color.FromArgb(109, 40, 217);     // Violet 700
+        public static readonly Color PrimaryLight = Color.FromArgb(221, 214, 254);   // Violet 200
+        public static readonly Color PrimaryUltraLight = Color.FromArgb(245, 243, 255); // Violet 50
 
         // Slate / Navy Sidebar Palette
-        public static readonly Color SidebarDark = Color.FromArgb(15, 23, 42);       // Slate 900
-        public static readonly Color SidebarDarkSecondary = Color.FromArgb(30, 41, 59); // Slate 800
-        public static readonly Color SidebarHover = Color.FromArgb(51, 65, 85);      // Slate 700
-        public static readonly Color SidebarActive = Color.FromArgb(5, 150, 105);    // Emerald 600
+        public static readonly Color SidebarDark = Color.FromArgb(30, 27, 75);       // Indigo 950
+        public static readonly Color SidebarDarkSecondary = Color.FromArgb(49, 46, 129); // Indigo 900
+        public static readonly Color SidebarHover = Color.FromArgb(67, 56, 202);      // Indigo 700
+        public static readonly Color SidebarActive = Color.FromArgb(124, 58, 237);    // Violet 600
 
         // Neutral & Background Surfaces
         public static readonly Color Background = Color.FromArgb(241, 245, 249);     // Slate 100
@@ -169,7 +169,7 @@ namespace MiniSupermarket.WinForms.Theme
             dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dgv.ColumnHeadersHeight = 40;
-            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(30, 41, 59);
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(49, 46, 129);
             dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
             dgv.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -180,14 +180,14 @@ namespace MiniSupermarket.WinForms.Theme
             dgv.DefaultCellStyle.BackColor = Color.White;
             dgv.DefaultCellStyle.ForeColor = Color.FromArgb(15, 23, 42);
             dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
-            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(204, 251, 241); // Soft mint tint
+            dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(237, 233, 254); // Soft purple tint
             dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(15, 23, 42);    // Readable dark text!
             dgv.DefaultCellStyle.Padding = new Padding(10, 0, 0, 0);
 
             // Alternating Row
             dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(248, 250, 252);
             dgv.AlternatingRowsDefaultCellStyle.ForeColor = Color.FromArgb(15, 23, 42);
-            dgv.AlternatingRowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(204, 251, 241);
+            dgv.AlternatingRowsDefaultCellStyle.SelectionBackColor = Color.FromArgb(237, 233, 254);
             dgv.AlternatingRowsDefaultCellStyle.SelectionForeColor = Color.FromArgb(15, 23, 42);
             dgv.AlternatingRowsDefaultCellStyle.Padding = new Padding(10, 0, 0, 0);
         }

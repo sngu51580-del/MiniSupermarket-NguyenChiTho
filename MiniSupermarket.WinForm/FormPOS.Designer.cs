@@ -123,9 +123,9 @@ namespace MiniSupermarket.WinForms.Forms
             // lblBarcodeBadge
             // 
             lblBarcodeBadge.AutoSize = true;
-            lblBarcodeBadge.BackColor = Color.FromArgb(236, 253, 245);
+            lblBarcodeBadge.BackColor = Color.FromArgb(245, 243, 255);
             lblBarcodeBadge.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblBarcodeBadge.ForeColor = Color.FromArgb(5, 150, 105);
+            lblBarcodeBadge.ForeColor = Color.FromArgb(124, 58, 237);
             lblBarcodeBadge.Location = new Point(14, 18);
             lblBarcodeBadge.Name = "lblBarcodeBadge";
             lblBarcodeBadge.Padding = new Padding(6, 4, 6, 4);
@@ -164,7 +164,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.FromArgb(5, 150, 105);
+            btnAdd.BackColor = Color.FromArgb(124, 58, 237);
             btnAdd.Cursor = Cursors.Hand;
             btnAdd.FlatAppearance.BorderSize = 0;
             btnAdd.FlatStyle = FlatStyle.Flat;
@@ -436,7 +436,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // btnPay
             // 
-            btnPay.BackColor = Color.FromArgb(5, 150, 105);
+            btnPay.BackColor = Color.FromArgb(124, 58, 237);
             btnPay.Cursor = Cursors.Hand;
             btnPay.Dock = DockStyle.Bottom;
             btnPay.FlatAppearance.BorderSize = 0;
@@ -522,7 +522,7 @@ namespace MiniSupermarket.WinForms.Forms
             lblChange.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblChange.AutoSize = true;
             lblChange.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            lblChange.ForeColor = Color.FromArgb(5, 150, 105);
+            lblChange.ForeColor = Color.FromArgb(124, 58, 237);
             lblChange.Location = new Point(475, 136);
             lblChange.Name = "lblChange";
             lblChange.Size = new Size(46, 30);
@@ -587,7 +587,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // panelTotalBanner
             // 
-            panelTotalBanner.BackColor = Color.FromArgb(15, 23, 42);
+            panelTotalBanner.BackColor = Color.FromArgb(30, 27, 75);
             panelTotalBanner.Controls.Add(lblTotal);
             panelTotalBanner.Controls.Add(lblTotalTitle);
             panelTotalBanner.Dock = DockStyle.Top;
@@ -601,7 +601,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             lblTotal.Dock = DockStyle.Right;
             lblTotal.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
-            lblTotal.ForeColor = Color.FromArgb(52, 211, 153);
+            lblTotal.ForeColor = Color.FromArgb(196, 181, 253);
             lblTotal.Location = new Point(236, 10);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(332, 55);
@@ -774,7 +774,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             lblCustPoints.AutoSize = true;
             lblCustPoints.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            lblCustPoints.ForeColor = Color.FromArgb(5, 150, 105);
+            lblCustPoints.ForeColor = Color.FromArgb(124, 58, 237);
             lblCustPoints.Location = new Point(380, 110);
             lblCustPoints.Name = "lblCustPoints";
             lblCustPoints.Size = new Size(66, 23);
@@ -855,12 +855,12 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // btnCustAdd
             // 
-            btnCustAdd.BackColor = Color.FromArgb(236, 253, 245);
+            btnCustAdd.BackColor = Color.FromArgb(245, 243, 255);
             btnCustAdd.Cursor = Cursors.Hand;
-            btnCustAdd.FlatAppearance.BorderColor = Color.FromArgb(167, 243, 208);
+            btnCustAdd.FlatAppearance.BorderColor = Color.FromArgb(196, 181, 253);
             btnCustAdd.FlatStyle = FlatStyle.Flat;
             btnCustAdd.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
-            btnCustAdd.ForeColor = Color.FromArgb(5, 150, 105);
+            btnCustAdd.ForeColor = Color.FromArgb(124, 58, 237);
             btnCustAdd.Location = new Point(395, 27);
             btnCustAdd.Name = "btnCustAdd";
             btnCustAdd.Size = new Size(72, 28);

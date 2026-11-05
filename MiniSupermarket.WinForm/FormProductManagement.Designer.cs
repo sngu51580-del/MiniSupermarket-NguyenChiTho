@@ -236,7 +236,7 @@ namespace MiniSupermarket.WinForms
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.FromArgb(5, 150, 105);
+            btnAdd.BackColor = Color.FromArgb(124, 58, 237);
             btnAdd.Cursor = Cursors.Hand;
             btnAdd.FlatAppearance.BorderSize = 0;
             btnAdd.FlatStyle = FlatStyle.Flat;
@@ -276,7 +276,7 @@ namespace MiniSupermarket.WinForms
             txtUnit.Font = new Font("Segoe UI", 10F);
             txtUnit.Location = new Point(115, 258);
             txtUnit.Name = "txtUnit";
-            txtUnit.PlaceholderText = "Kg, Gói, Bó, Hộp...";
+            txtUnit.PlaceholderText = "Chai, Lon, Gói, Thùng, Bao...";
             txtUnit.Size = new Size(220, 25);
             txtUnit.TabIndex = 5;
             // 
@@ -339,7 +339,7 @@ namespace MiniSupermarket.WinForms
             txtProductName.Font = new Font("Segoe UI", 10F);
             txtProductName.Location = new Point(115, 138);
             txtProductName.Name = "txtProductName";
-            txtProductName.PlaceholderText = "Nhập tên nông sản / sản phẩm...";
+            txtProductName.PlaceholderText = "Nhập tên mặt hàng tạp hóa...";
             txtProductName.Size = new Size(220, 25);
             txtProductName.TabIndex = 2;
             // 
@@ -360,7 +360,7 @@ namespace MiniSupermarket.WinForms
             txtBarcode.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txtBarcode.Location = new Point(115, 98);
             txtBarcode.Name = "txtBarcode";
-            txtBarcode.PlaceholderText = "893000...";
+            txtBarcode.PlaceholderText = "8935001100...";
             txtBarcode.Size = new Size(220, 25);
             txtBarcode.TabIndex = 1;
             // 

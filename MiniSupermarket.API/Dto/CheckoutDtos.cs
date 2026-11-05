@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * DTO: Nghiệp vụ thanh toán giỏ hàng POS
  */
 namespace MiniSupermarket.API.Dto

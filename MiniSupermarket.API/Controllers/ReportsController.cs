@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * Bài tập: Buổi 5 - Tiết 3: Tối ưu truy vấn với Stored Procedure & Báo cáo doanh thu ca bán lẻ
  * Mô tả: Controller ADO.NET thực thi Stored Procedure xuất báo cáo ca bán dựa trên dữ liệu bảng Orders và Users (bất đồng bộ async/await)
  */
@@ -327,7 +327,73 @@ namespace MiniSupermarket.API.Controllers
             DateTime start = fromDate ?? DateTime.Today.AddDays(-30);
             DateTime end = toDate ?? DateTime.Today.AddDays(1);
 
-            // Truy vấn gom nhóm theo ngày
+            string connectionString = _configuration.GetConnectionString("DefaultConnection")!;
+            var result = new List<DailyRevenueDto>();
+
+            await using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                bool useProcedure = true;
+
+                // Gọi Stored Procedure sp_GetDailyRevenue (GROUP BY CAST(OrderDate AS DATE))
+                await using (SqlCommand command = new SqlCommand("sp_GetDailyRevenue", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@FromDate", start);
+                    command.Parameters.AddWithValue("@ToDate", end);
+
+                    try
+                    {
+                        await using (SqlDataReader reader = await command.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                result.Add(new DailyRevenueDto
+                                {
+                                    Date = Convert.ToDateTime(reader["RevenueDate"]).ToString("yyyy-MM-dd"),
+                                    Revenue = Convert.ToDecimal(reader["Revenue"]),
+                                    OrderCount = Convert.ToInt32(reader["OrderCount"])
+                                });
+                            }
+                        }
+                    }
+                    catch (SqlException ex) when (ex.Number == 2812)
+                    {
+                        useProcedure = false;
+                    }
+                }
+
+                if (!useProcedure)
+                {
+                    string fallbackSql = @"
+                        SELECT 
+                            CAST(OrderDate AS DATE) AS RevenueDate,
+                            SUM(TotalAmount) AS Revenue,
+                            COUNT(OrderId) AS OrderCount
+                        FROM Orders
+                        WHERE OrderDate >= @FromDate AND OrderDate <= @ToDate AND Status = 'Completed'
+                        GROUP BY CAST(OrderDate AS DATE)
+                        ORDER BY RevenueDate ASC";
+
+                    await using (SqlCommand fallbackCmd = new SqlCommand(fallbackSql, connection))
+                    {
+                        fallbackCmd.Parameters.AddWithValue("@FromDate", start);
+                        fallbackCmd.Parameters.AddWithValue("@ToDate", end);
+                        await using (SqlDataReader reader = await fallbackCmd.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                result.Add(new DailyRevenueDto
+                                {
+                                    Date = Convert.ToDateTime(reader["RevenueDate"]).ToString("yyyy-MM-dd"),
+                                    Revenue = Convert.ToDecimal(reader["Revenue"]),
+                                    OrderCount = Convert.ToInt32(reader["OrderCount"])
+                                });
+                            }
+                        }
+                    }
+                }
+            }
             var dailyData = await _context.Orders
                 .Where(o => o.OrderDate >= start && o.OrderDate <= end && o.Status == "Completed")
                 .GroupBy(o => o.OrderDate.Date)
@@ -340,7 +406,7 @@ namespace MiniSupermarket.API.Controllers
                 .OrderBy(x => x.Date)
                 .ToListAsync();
 
-            var result = dailyData.Select(x => new DailyRevenueDto
+            if (result.Count == 0) result = dailyData.Select(x => new DailyRevenueDto
             {
                 Date = x.Date.ToString("yyyy-MM-dd"),
                 Revenue = x.Revenue,

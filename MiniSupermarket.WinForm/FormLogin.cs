@@ -32,7 +32,7 @@ namespace MiniSupermarket.WinForms
 
                 if (thanhCong)
                 {
-                    lblMessage.ForeColor = System.Drawing.Color.FromArgb(5, 150, 105);
+                    lblMessage.ForeColor = System.Drawing.Color.FromArgb(124, 58, 237);
                     lblMessage.Text = "✓ Đăng nhập thành công! Đang chuyển hướng...";
 
                     MessageBox.Show($"Đăng nhập thành công!\nNhân viên: {username}\nVai trò: [{SessionManager.CurrentRole}]",

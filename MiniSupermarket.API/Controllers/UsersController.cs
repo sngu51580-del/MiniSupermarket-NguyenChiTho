@@ -159,9 +159,9 @@ namespace MiniSupermarket.API.Controllers
                 return NotFound(new { message = "Không tìm thấy người dùng!" });
             }
 
-            if (user.Username.ToLower() == "admin01")
+            if (user.Username.ToLower() == "coba_chutiem" || user.Username.ToLower() == "admin01")
             {
-                return BadRequest(new { message = "Không thể xóa tài khoản quản trị viên gốc (admin01)!" });
+                return BadRequest(new { message = "Không thể xóa tài khoản Chủ tiệm gốc (coba_chutiem)!" });
             }
 
             _context.Users.Remove(user);

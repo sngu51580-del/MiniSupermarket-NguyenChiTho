@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * Bài tập: Buổi 5 - Tiết 5: Hiện thực hóa API thanh toán POS bọc trong SqlTransaction & Kịch bản kiểm thử
  * Mô tả: API Thanh toán POS đa bảng và Hủy đơn hàng được bảo vệ trọn vẹn bởi SqlTransaction (ACID),
  *       sử dụng cấu trúc dữ liệu chuẩn của dự án trong /Data (SupermarketDbContext) kết hợp async/await.
@@ -52,7 +52,7 @@ namespace MiniSupermarket.API.Controllers
                 {
                     // 2.1. Tra cứu UserId tương ứng với CashierUsername từ bảng Users trong /Data
                     string findUserSql = "SELECT TOP 1 Id FROM Users WHERE Username = @Username";
-                    int userId = 3; // Mặc định là cashier01 (Id = 3) nếu không tìm thấy
+                    int userId = 3; // Mặc định là thungan_mai (Id = 3) nếu không tìm thấy
 
                     await using (SqlCommand cmdUser = new SqlCommand(findUserSql, connection, transaction))
                     {

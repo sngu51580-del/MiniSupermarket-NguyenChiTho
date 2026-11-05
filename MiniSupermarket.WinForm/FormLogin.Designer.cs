@@ -46,7 +46,7 @@ namespace MiniSupermarket.WinForms
             // 
             // panelBrand
             // 
-            panelBrand.BackColor = Color.FromArgb(15, 23, 42);
+            panelBrand.BackColor = Color.FromArgb(30, 27, 75);
             panelBrand.Controls.Add(lblBrandVersion);
             panelBrand.Controls.Add(panelBrandCard);
             panelBrand.Controls.Add(lblBrandSub);
@@ -68,12 +68,12 @@ namespace MiniSupermarket.WinForms
             lblBrandVersion.Name = "lblBrandVersion";
             lblBrandVersion.Size = new Size(290, 25);
             lblBrandVersion.TabIndex = 4;
-            lblBrandVersion.Text = "MiniMart POS v2.4 • Phiên bản Doanh nghiệp";
+            lblBrandVersion.Text = "Tạp Hóa Cô Ba POS v2.4 • Sài Gòn Xưa & Nay";
             lblBrandVersion.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panelBrandCard
             // 
-            panelBrandCard.BackColor = Color.FromArgb(30, 41, 59);
+            panelBrandCard.BackColor = Color.FromArgb(49, 46, 129);
             panelBrandCard.Controls.Add(lblBrandBullet4);
             panelBrandCard.Controls.Add(lblBrandBullet3);
             panelBrandCard.Controls.Add(lblBrandBullet2);
@@ -129,7 +129,7 @@ namespace MiniSupermarket.WinForms
             // 
             lblBrandFeatureTitle.AutoSize = true;
             lblBrandFeatureTitle.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            lblBrandFeatureTitle.ForeColor = Color.FromArgb(52, 211, 153);
+            lblBrandFeatureTitle.ForeColor = Color.FromArgb(196, 181, 253);
             lblBrandFeatureTitle.Location = new Point(14, 10);
             lblBrandFeatureTitle.Name = "lblBrandFeatureTitle";
             lblBrandFeatureTitle.Size = new Size(160, 17);
@@ -144,7 +144,7 @@ namespace MiniSupermarket.WinForms
             lblBrandSub.Name = "lblBrandSub";
             lblBrandSub.Size = new Size(290, 45);
             lblBrandSub.TabIndex = 2;
-            lblBrandSub.Text = "Hệ thống Quản lý Bán lẻ & Tồn kho Siêu thị Nông sản Hữu cơ";
+            lblBrandSub.Text = "Hệ thống Quản lý Bán lẻ, Tích điểm & Sổ sách Tiệm Tạp Hóa Cô Ba Sài Gòn";
             // 
             // lblBrandTitle
             // 
@@ -155,18 +155,18 @@ namespace MiniSupermarket.WinForms
             lblBrandTitle.Name = "lblBrandTitle";
             lblBrandTitle.Size = new Size(215, 38);
             lblBrandTitle.TabIndex = 1;
-            lblBrandTitle.Text = "MINIMART POS";
+            lblBrandTitle.Text = "TẠP HÓA CÔ BA";
             // 
             // lblBrandIcon
             // 
             lblBrandIcon.AutoSize = true;
             lblBrandIcon.Font = new Font("Segoe UI", 36F);
-            lblBrandIcon.ForeColor = Color.FromArgb(16, 185, 129);
+            lblBrandIcon.ForeColor = Color.FromArgb(167, 139, 250);
             lblBrandIcon.Location = new Point(28, 32);
             lblBrandIcon.Name = "lblBrandIcon";
             lblBrandIcon.Size = new Size(130, 65);
             lblBrandIcon.TabIndex = 0;
-            lblBrandIcon.Text = "🌿🛒";
+            lblBrandIcon.Text = "👑🛍️";
             // 
             // panelLogin
             // 
@@ -198,7 +198,7 @@ namespace MiniSupermarket.WinForms
             lblHint.Padding = new Padding(10, 8, 10, 8);
             lblHint.Size = new Size(364, 50);
             lblHint.TabIndex = 9;
-            lblHint.Text = "💡 Tài khoản mẫu: admin01 (Toàn quyền) | thu_ngan01 (Bán hàng) | kho01 (Quản lý kho)";
+            lblHint.Text = "💡 Tài khoản mẫu (MK: 123): coba_chutiem (Chủ tiệm) | thungan_mai (Thu ngân) | kho_anhba (Thủ kho)";
             lblHint.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblMessage
@@ -214,7 +214,7 @@ namespace MiniSupermarket.WinForms
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.FromArgb(5, 150, 105);
+            btnLogin.BackColor = Color.FromArgb(124, 58, 237);
             btnLogin.Cursor = Cursors.Hand;
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
@@ -318,7 +318,7 @@ namespace MiniSupermarket.WinForms
             MinimizeBox = false;
             Name = "FormLogin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "MiniMart POS - Đăng nhập hệ thống";
+            Text = "Tiệm Tạp Hóa Cô Ba Sài Gòn - Đăng nhập hệ thống POS";
             Load += FormLogin_Load;
             panelBrand.ResumeLayout(false);
             panelBrand.PerformLayout();

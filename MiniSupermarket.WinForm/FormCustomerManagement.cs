@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Net.Http;
@@ -42,10 +42,7 @@ namespace MiniSupermarket.WinForms
 
         private HttpClient GetAuthenticatedClient()
         {
-            var client = new HttpClient
-            {
-                BaseAddress = new Uri(ApiClientService.ApiBaseUrl)
-            };
+            var client = ApiClientService.CreateClient();
 
             if (!string.IsNullOrEmpty(SessionManager.JwtToken))
             {
@@ -133,7 +130,7 @@ namespace MiniSupermarket.WinForms
                 txtAddress.Text = customer.Address ?? string.Empty;
                 txtRewardPoints.Text = customer.RewardPoints.ToString();
 
-                int rankIndex = cbMembershipRank.FindStringExact(customer.MembershipRank ?? "Chuẩn");
+                int rankIndex = cbMembershipRank.FindStringExact(customer.MembershipRank ?? "Mới");
                 cbMembershipRank.SelectedIndex = rankIndex >= 0 ? rankIndex : 0;
             }
         }
@@ -166,7 +163,7 @@ namespace MiniSupermarket.WinForms
                 PhoneNumber = phone,
                 Address = txtAddress.Text.Trim(),
                 RewardPoints = points,
-                MembershipRank = cbMembershipRank.SelectedItem?.ToString() ?? "Chuẩn"
+                MembershipRank = cbMembershipRank.SelectedItem?.ToString() ?? "Mới"
             };
 
             try
@@ -219,7 +216,7 @@ namespace MiniSupermarket.WinForms
                 PhoneNumber = phone,
                 Address = txtAddress.Text.Trim(),
                 RewardPoints = points,
-                MembershipRank = cbMembershipRank.SelectedItem?.ToString() ?? "Chuẩn"
+                MembershipRank = cbMembershipRank.SelectedItem?.ToString() ?? "Mới"
             };
 
             try
@@ -314,6 +311,6 @@ namespace MiniSupermarket.WinForms
         public string PhoneNumber { get; set; } = string.Empty;
         public string? Address { get; set; }
         public int RewardPoints { get; set; }
-        public string MembershipRank { get; set; } = "Chuẩn";
+        public string MembershipRank { get; set; } = "Mới";
     }
 }

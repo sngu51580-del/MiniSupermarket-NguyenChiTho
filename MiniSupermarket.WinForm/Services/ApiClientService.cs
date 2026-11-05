@@ -1,5 +1,5 @@
 /*
- * Họ tên sinh viên: Nguyen Quoc Vuong
+ * Họ tên sinh viên: Nguyen Chi Tho
  * Mô tả: Lớp tĩnh quản lý HttpClient kết nối Web API, tự động gắn JWT Bearer Token
  */
 using System;
@@ -15,12 +15,33 @@ namespace MiniSupermarket.WinForms.Services
     {
         public const string ApiBaseUrl = "http://localhost:5000/api/";
 
+        public static HttpMessageHandler? CustomHandler { get; set; }
+
         // Khởi tạo một phiên bản HttpClient dùng chung cho toàn ứng dụng
-        public static readonly HttpClient Client = new HttpClient
+        public static HttpClient Client { get; set; } = new HttpClient
         {
             // Đảm bảo số cổng Port trùng khớp với số Port đang chạy của Web API Backend
             BaseAddress = new Uri(ApiBaseUrl)
         };
+
+        public static HttpClient CreateClient()
+        {
+            var client = CustomHandler != null
+                ? new HttpClient(CustomHandler, disposeHandler: false) { BaseAddress = new Uri(ApiBaseUrl) }
+                : new HttpClient { BaseAddress = new Uri(ApiBaseUrl) };
+            if (!string.IsNullOrEmpty(SessionManager.JwtToken))
+            {
+                client.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", SessionManager.JwtToken);
+            }
+            return client;
+        }
+
+        public static void UseCustomHandler(HttpMessageHandler handler)
+        {
+            CustomHandler = handler;
+            Client = CreateClient();
+        }
 
         // Phương thức cập nhật Bearer Token sau khi đăng nhập thành công
         public static void AttachToken(string token)

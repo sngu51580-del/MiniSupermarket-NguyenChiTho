@@ -35,7 +35,7 @@ namespace MiniSupermarket.WinForms
         private void FormMainShell_Load(object? sender, EventArgs e)
         {
             string role = SessionManager.CurrentRole;
-            string username = string.IsNullOrEmpty(SessionManager.CurrentUsername) ? "admin01" : SessionManager.CurrentUsername;
+            string username = string.IsNullOrEmpty(SessionManager.CurrentUsername) ? "coba_chutiem" : SessionManager.CurrentUsername;
 
             lblUserInfo.Text = $"👤 {username}  [{role.ToUpper()}]";
             lblUserFullName.Text = username;
@@ -214,12 +214,12 @@ namespace MiniSupermarket.WinForms
             {
                 if (ctrl is Button btn && btn != btnLogout)
                 {
-                    btn.BackColor = Color.FromArgb(15, 23, 42);
+                    btn.BackColor = Color.FromArgb(30, 27, 75);
                     btn.ForeColor = Color.FromArgb(203, 213, 225);
                 }
             }
 
-            activeButton.BackColor = Color.FromArgb(5, 150, 105);
+            activeButton.BackColor = Color.FromArgb(124, 58, 237);
             activeButton.ForeColor = Color.White;
         }
 

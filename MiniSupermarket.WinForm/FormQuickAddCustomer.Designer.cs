@@ -33,7 +33,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(30, 27, 75);
             this.panelHeader.Controls.Add(this.lblSubTitle);
             this.panelHeader.Controls.Add(this.lblTitle);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -130,7 +130,7 @@ namespace MiniSupermarket.WinForms.Forms
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(124, 58, 237);
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

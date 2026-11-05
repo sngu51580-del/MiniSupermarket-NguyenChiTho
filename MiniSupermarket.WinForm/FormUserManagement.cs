@@ -285,9 +285,9 @@ namespace MiniSupermarket.WinForms
                 return;
             }
 
-            if (txtUsername.Text.Trim().ToLower() == "admin01")
+            if (txtUsername.Text.Trim().ToLower() == "coba_chutiem" || txtUsername.Text.Trim().ToLower() == "admin01")
             {
-                MessageBox.Show("Không thể xóa tài khoản Quản trị viên gốc (admin01)!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Không thể xóa tài khoản Chủ tiệm gốc (coba_chutiem)!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

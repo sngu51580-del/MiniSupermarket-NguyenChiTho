@@ -1,5 +1,5 @@
 /*
- * Họ tên sinh viên: Nguyen Quoc Vuong
+ * Họ tên sinh viên: Nguyen Chi Tho
  * Mô tả: Lớp DTO tổng quát (Generic) chứa dữ liệu phân trang trả về cho Client
  */
 namespace MiniSupermarket.API.Models

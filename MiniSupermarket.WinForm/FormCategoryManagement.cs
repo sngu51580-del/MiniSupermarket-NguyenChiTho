@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Net.Http;
@@ -42,10 +42,7 @@ namespace MiniSupermarket.WinForms
 
         private HttpClient GetAuthenticatedClient()
         {
-            var client = new HttpClient
-            {
-                BaseAddress = new Uri(ApiClientService.ApiBaseUrl)
-            };
+            var client = ApiClientService.CreateClient();
             if (!string.IsNullOrEmpty(SessionManager.JwtToken))
             {
                 client.DefaultRequestHeaders.Authorization =

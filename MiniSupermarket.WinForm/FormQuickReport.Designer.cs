@@ -105,7 +105,7 @@ namespace MiniSupermarket.WinForms
             // 
             // btnRunReport
             // 
-            btnRunReport.BackColor = Color.FromArgb(5, 150, 105);
+            btnRunReport.BackColor = Color.FromArgb(124, 58, 237);
             btnRunReport.Cursor = Cursors.Hand;
             btnRunReport.FlatAppearance.BorderSize = 0;
             btnRunReport.FlatStyle = FlatStyle.Flat;
@@ -215,7 +215,7 @@ namespace MiniSupermarket.WinForms
             // 
             // cardRevenue (Thẻ 1: Doanh thu hôm nay)
             // 
-            cardRevenue.BackColor = Color.FromArgb(5, 150, 105);
+            cardRevenue.BackColor = Color.FromArgb(124, 58, 237);
             cardRevenue.Controls.Add(lblRevenueIcon);
             cardRevenue.Controls.Add(lblRevenueTitle);
             cardRevenue.Controls.Add(lblTotalRevenue);
@@ -233,7 +233,7 @@ namespace MiniSupermarket.WinForms
             lblRevenueIcon.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblRevenueIcon.AutoSize = true;
             lblRevenueIcon.Font = new Font("Segoe UI", 26F);
-            lblRevenueIcon.ForeColor = Color.FromArgb(167, 243, 208);
+            lblRevenueIcon.ForeColor = Color.FromArgb(221, 214, 254);
             lblRevenueIcon.Location = new Point(245, 12);
             lblRevenueIcon.Name = "lblRevenueIcon";
             lblRevenueIcon.Size = new Size(61, 47);
@@ -245,7 +245,7 @@ namespace MiniSupermarket.WinForms
             // 
             lblRevenueTitle.AutoSize = true;
             lblRevenueTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblRevenueTitle.ForeColor = Color.FromArgb(209, 250, 229);
+            lblRevenueTitle.ForeColor = Color.FromArgb(237, 233, 254);
             lblRevenueTitle.Location = new Point(14, 16);
             lblRevenueTitle.Name = "lblRevenueTitle";
             lblRevenueTitle.Size = new Size(137, 15);
@@ -606,7 +606,7 @@ namespace MiniSupermarket.WinForms
 
             series1.ChartArea = "ChartArea1";
             series1.ChartType = SeriesChartType.Column;
-            series1.Color = Color.FromArgb(37, 99, 235);
+            series1.Color = Color.FromArgb(124, 58, 237);
             series1.Font = new Font("Segoe UI", 8.5F, FontStyle.Bold);
             series1.IsValueShownAsLabel = true;
             series1.LabelFormat = "{0:N0} đ";

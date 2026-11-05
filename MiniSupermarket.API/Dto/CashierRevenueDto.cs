@@ -1,5 +1,5 @@
 /*
- * Họ và tên sinh viên: Nguyễn Quốc Vương
+ * Họ và tên sinh viên: Nguyễn Chí Thọ
  * DTO: Báo cáo doanh thu ca trực của nhân viên thu ngân
  */
 namespace MiniSupermarket.API.Dto
