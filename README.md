@@ -359,7 +359,7 @@ Mật khẩu mẫu theo tài liệu thực hành: `123456`.
 
 ## 👨‍💻 6. Thông tin sinh viên
 
-- **Họ và tên:** Nguyễn Quốc Vương
-- **Mã sinh viên:** 2124110272
+- **Họ và tên:** Nguyễn Chí Thọ
+- **Mã sinh viên:** 2124110260
 - **Lớp học phần:** CCQ2411D
 >>>>>>> buoi5
